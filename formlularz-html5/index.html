@@ -8,10 +8,29 @@
 
 <body>
     <form action="https://formspree.io/aska.szewczyk@gmail.com" method="post">
-        <input type="text" name="Imię" />
-        <input type="text" name="Nazwisko" />
-        <input type="text" name="Mail" />
-        <input type="text" name="Telefon" />
+        Imię <br>
+        <input type="text" name="Imię" /><br> Nazwisko <br>
+        <input type="text" name="Nazwisko" /><br> Mail <br>
+        <input type="text" name="Mail" /><br> Telefon <br>
+        <input type="text" name="Telefon" /><br>
+        <select name="Wybierz">
+           <option value="value1" selected>Wybierz</option>
+           <option value="value2">Kraków</option>
+           <option value="value3">Warszawa</option>
+           <option value="value4">Gdańsk</option>
+        </select> <br>
+
+        <input type="radio" name="plec" value="Kobieta" checked>Kobieta<br>
+        <input type="radio" name="plec" value="Mężczyzna">Mężczyzna<br>
+        <input type="radio" name="plec" value="Inne">Inne<br> 
+        Zgoda na przetworzenie danych osobowych <br>
+
+        <input type="checkbox" name="zgoda" value="tak">Wyrażam zgodę <br>
+        <input type="checkbox" name="zgoda" value="nie">Nie wyrażam zgody <br> Wiadomość <br>
+        <textarea maxlength="800"></textarea><br>
+        <input type="submit" value="Wyślij">
+
+
 
 
     </form>
