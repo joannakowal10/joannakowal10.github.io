@@ -15,19 +15,23 @@ span {
 section {
     padding: 0px 80px 100px;  /* top left-right bottom*/
 }
-
+w
 a {
     transition: all 0.3s;
+}
+h2 {
+    text-align: center;
 }
 /*general style stop/
 
 
 /*navigacja*/
 nav {
-    background-color: red;
+    background-color: white;
     width: 100%;
     top: 0px;
     position: fixed;
+    z-index: 30;
      
 }
 
@@ -68,7 +72,51 @@ nav ul li a:hover {
     text-align: center;
     position: relative;
     top: 50%;
+    transform: translateY(-50%)
     
 }
 
+#main-header .header-content h1 {
+    font-size: 5em;
+    font-weight: 200;
+    margin: 0px;
+   
+     
+}
 
+#main-header .header-content h2 {
+    font-size: 2em;
+    font-weight: 100;
+    margin: 0px;
+     
+}
+
+/*section about start*/
+
+#about {
+    background-color: #f9fcfe;
+    
+}
+
+#about figure {
+    width: 50%;
+    float: left;
+    text-align: center;
+    
+    
+}
+
+#about figure img {
+    max-height: 400px;
+    max-width: 50%;
+    border: 2px solid #fff; 
+    border-radius: 15px;
+    
+}
+#about article {
+    width: 50%;
+    float: left;
+    display: block;
+    
+}
+/*section about stop*/
