@@ -1,33 +1,31 @@
-
-
 #gallery {
-	width: 100%;
+    width: 100%;
 }
 
 figure {
-	display: inline-block;
-	width: 33.33%;
-	margin: 0;
-	margin-bottom: 10px;
+    display: inline-block;
+    width: 33.33%;
+    margin: 0;
+    margin-bottom: 10px;
 }
 
 @media (max-width:992px) {
     figure {
         width: 50%;
-        
+
     }
 }
-    
+
 @media (max-width:768px) {
     figure {
         width: 100%;
     }
 }
-        
-    
+
+
 @media (max-width:480px) {
     figure {
         width: 100%;
-        
+
     }
 }
