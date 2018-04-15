@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Formularz</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -16,25 +17,29 @@
         <input type="text" name="email" id="email"><br>
         <label for="numer-telefonu">Numer telefonu:</label><br>
         <input type="text" name="numer-telefonu" id="numer-telefonu"><br>
+        <br>
+        <label for="miasto">Wybierz miasto</label> <br>
         <select name="Wybierz">
-           <option value="value1" selected>Wybierz</option>
-           <option value="krakow">Kraków</option>
+           
+           <option value="krakow" selected>Kraków</option>
            <option value="warszawa">Warszawa</option>
            <option value="gdansk">Gdańsk</option>
-        </select> <br>
-        Płeć: <br>
-        <label for="kobieta">Kobieta</label>
-        <input type="radio" name="plec" id="kobieta" value="kobieta"> <br>
+           
+        </select> <br><br> Wybierz płeć: <br>
+        <input type="radio" name="plec" id="kobieta" value="kobieta">
+        <label for="kobieta">Kobieta</label> <br>
+        <input type="radio" name="plec" id="mezczyzna" value="mezczyzna">
         <label for="mezczyzna">Mężczyzna</label>
-        <input type="radio" name="plec" id="mezczyzna" value="mezczyzna"> <br>
-        <label for="inne">Inne</label>
-        <input type="radio" name="plec" id="inne" value="inne"> <br> 
-        Zgoda na przetworzenie danych osobowych <br>
-        <label for="tak">Tak, wyrażam zgodę</label><br>
-        <input type="checkbox" name="tak" value="Tak" id="tak"><br>
+        <br>
+        <br>
 
-        <label for="wiadomosc">Wiadomość</label><br>
+        <label for="wiadomosc">Wiadomość:</label><br>
         <textarea name="wiadomosc" id="wiadomosc" maxlength="700"></textarea><br>
+        <br>
+        <label for="tak">Wyrażam zgodę na przetworzenie moich danych osobowych</label>
+        <input type="checkbox" name="tak" value="Tak" id="tak"><br>
+        <br>
+        <input type="submit" value="Wyślij">
 
 
     </form>

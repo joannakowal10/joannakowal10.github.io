@@ -1,0 +1,45 @@
+html {
+    background-color: #213b50;
+    color: white;   
+}
+
+input[type="text"], option[value="krakow"], option[value="warszawa"], option[value="gdansk"], select {
+    background-color: #2b4a64;
+    width: 300px;
+    color: #fff;
+    border: 1px solid #2b4a64;
+    height: 25px;
+}
+
+forml label {
+    display: block;
+}
+textarea[name="wiadomosc"] {
+    background-color: #2b4a64;
+    width: 300px;
+    height: 80px;
+    
+}
+
+form select:focus, textarea:focus, input:focus {
+    background-color: #4e708c;
+    border: 1px solid #fff;
+}
+form input[type="checkbox"] {
+    float: left;
+}
+form input[type="submit"] {
+    background-color: #1ac056;
+    color: #fff;
+    border: 1px solid #1ac056;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: forestgreen;
+    color: #1ac056;
+    border: 0px;
+}
