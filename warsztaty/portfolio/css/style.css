@@ -1,0 +1,74 @@
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    margin: 0px;
+    padding: 0px;
+    color: #291f1a;
+}
+
+/*general style start*/
+
+span {
+    color: #1ac056;
+}
+
+section {
+    padding: 0px 80px 100px;  /* top left-right bottom*/
+}
+
+a {
+    transition: all 0.3s;
+}
+/*general style stop/
+
+
+/*navigacja*/
+nav {
+    background-color: red;
+    width: 100%;
+    top: 0px;
+    position: fixed;
+     
+}
+
+nav ul {
+
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 20px 30px;
+    
+}
+    
+nav ul li a {
+    text-decoration: none;
+    color: #1ac056;
+    font-weight: 300;
+    
+}
+
+nav ul li a:hover {
+    color: #291f1a;
+}
+
+
+/*header*/
+#main-header {
+    background-image: url(../img/header-background.jpg);
+    height: 600px;
+    background-size: cover;
+    background-position: top;
+    color: white;
+    
+}
+
+#main-header .header-content {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    
+}
+
+
