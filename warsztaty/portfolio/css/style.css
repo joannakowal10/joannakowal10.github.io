@@ -57,7 +57,7 @@ nav ul li a:hover {
     color: #291f1a;
 }
 
-
+/*NAVIGATION STOP*/
 /*header*/
 #main-header {
     background-image: url(../img/header-background.jpg);
@@ -90,11 +90,13 @@ nav ul li a:hover {
     margin: 0px;
      
 }
+/*HEADER STOP*/
 
 /*section about start*/
 
 #about {
     background-color: #f9fcfe;
+    overflow: hidden;
     
 }
 
@@ -102,13 +104,13 @@ nav ul li a:hover {
     width: 50%;
     float: left;
     text-align: center;
-    
+    margin: 0px;
     
 }
 
 #about figure img {
     max-height: 400px;
-    max-width: 50%;
+    max-width: 100%;
     border: 2px solid #fff; 
     border-radius: 15px;
     
@@ -116,7 +118,14 @@ nav ul li a:hover {
 #about article {
     width: 50%;
     float: left;
-    display: block;
     
 }
 /*section about stop*/
+#skills p, #skills .skills-icons {
+    text-align: center;
+}
+
+  #skills .skills-icons .skills-icons-item { 
+    display: inline-block;
+    
+}
