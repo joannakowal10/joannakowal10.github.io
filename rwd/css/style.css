@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    font-family: "Verdana";
+    margin: 0px;
+
+
+}
+
+#tlo {
+    background-image: url(../img/man-1.jpg);
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    height: 100vh;
+
+}
+
+#naglowki {
+    top: 50%;
+    text-align: center;
+    left: 15px;
+    transform: translateY(-50%);
+    position: absolute;
+    color: white;
+
+}
+
+#naglowki h1 {
+
+    font-size: 40px;
+
+}
+
+#naglowki h2 {
+
+    font-size: 20px;
+}
+
+@media (max-width:1170px) {
+    #tlo {
+        background-image: url(../img/man-2.jpg);
+        height: 70vh;
+
+    }
+    #naglowki {
+        top: 200px;
+        right: 20px;
+        text-align: right;
+    }
+}
+
+@media (max-width:991px) {
+    #tlo {
+        background-image: url(../img/man-1.jpg);
+        height: 50vh;
+
+    }
+    #naglowki {
+        text-align: center;
+        color: black;
+        top: 60vh;
+
+    }
+}
