@@ -17,11 +17,12 @@
 
 #naglowki {
     top: 50%;
-    text-align: center;
+    text-align: left;
     left: 15px;
     transform: translateY(-50%);
     position: absolute;
     color: white;
+  
 
 }
 
@@ -44,8 +45,9 @@
     }
     #naglowki {
         top: 200px;
-        right: 20px;
-        text-align: right;
+        left: 550px;
+        
+       
     }
 }
 
@@ -56,9 +58,14 @@
 
     }
     #naglowki {
-        text-align: center;
         color: black;
         top: 60vh;
+        text-align: center;
+        right: 0; 
+        left: 0;
+        
+      
+        
 
     }
 }
