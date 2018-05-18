@@ -1,7 +1,38 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: "Lato";
+    font-family: "Lato, sans-serif";
     color: #291f1a;
     font-weight: 300;
-    background-color: beige;
+    margin: 0;
+    padding: 0;
     
+}
+
+#main-nav {
+    position: fixed;
+    background-color: #fff;
+    width: 100%;    
+}
+
+#main-nav ul  {
+    float: right;
+}
+
+#main-nav ul li {
+    display: inline-block;
+    padding: 20px 30px;
+}
+
+#main-nav ul li a {
+    color: #1ac056; 
+    text-decoration: none;
+}
+
+#main-nav ul li a:hover {
+    color: #291f1a;
 }
