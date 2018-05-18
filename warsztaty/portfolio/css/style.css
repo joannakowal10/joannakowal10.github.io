@@ -1,3 +1,8 @@
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Lato", sans-serif;
     font-weight: 300;
@@ -13,11 +18,11 @@ span {
 }
 
 section {
-    padding: 0px 80px 100px;
+    padding: 100px 80px 100px;
     /* top left-right bottom*/
 }
 
-w a {
+a {
     transition: all 0.3s;
 }
 
@@ -97,6 +102,9 @@ nav ul li a:hover {
 /*HEADER STOP*/
 
 /*section about start*/
+#skills h2 {
+    text-align: center;
+}
 
 #about {
     background-color: #f9fcfe;
@@ -104,7 +112,7 @@ nav ul li a:hover {
 }
 
 #about figure {
-    width: 50%;
+    width: 100%;
     float: left;
     text-align: center;
     margin: 0px;
@@ -119,7 +127,7 @@ nav ul li a:hover {
 }
 
 #about article {
-    width: 50%;
+    width: 100%;
     float: left;
 }
 
@@ -138,13 +146,14 @@ nav ul li a:hover {
 
 .portfolio-item {
     height: 350px;
-    width: 33.3333%;
+    width: 100%;
     display: inline-block;
     float: left;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
+    margin: 0;
 }
 
 #portfolio {
@@ -302,22 +311,12 @@ footer p {
     margin: 0px;
 }
 
-@media all and (max-width : 1200px)
-@media all and (max-width : 992px) 
-    .main-header-content {
-        padding: 10%;
-        
-}
-@media all and (max-width : 768px) 
-    * {
-        padding: 0 40px 50px;
-}
-h1 {
-    font-size: 3em;
-}
-h2 {font-size: 1.5em;}
-@media all and (max-width : 576px)
-     * {
-        padding: 0 10px 30px;
+
+
+@media (max-device-width:572px) {
+    .portfolio-items {
+        overflow: hidden;
+    }
+
 }
 
