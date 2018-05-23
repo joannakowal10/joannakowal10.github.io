@@ -102,7 +102,7 @@ section {
 }
 
 #about figure {
-    width: 50%;
+    width: 100%;
     float: left;
     text-align: center;
     margin: 0;
@@ -118,7 +118,7 @@ section {
 
 
 #about article {
-    width: 50%;
+    width: 100%;
     float: left;
 }
 
@@ -167,7 +167,7 @@ section {
 #portfolio .portfolio-items .portfolio-item {
     height: 350px;
     background-repeat: no-repeat;
-    width: 33%;
+    width: 100%;
     background-position: center;
     background-size: cover;
     display: inline-block;
@@ -229,7 +229,7 @@ section {
 
 #contact .contact-data,
 #contact .contact-form {
-    width: 49%;
+    width: 100%;
     float: left;
 }
 

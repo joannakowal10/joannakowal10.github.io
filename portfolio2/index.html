@@ -1,32 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+
     <title>Document</title>
-<!--    google fonts-->
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" >
+
+
+    <!--    google fonts-->
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Roboto:300,400,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!--    fontawesome fonts-->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--    bootstrap fonts-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+
+
+    <!--    main.css-->
     <link rel="stylesheet" href="css/main.css">
+
+    <!--    responsive.css-->
     <link rel="stylesheet" href="css/responsive.css">
 </head>
+
 <body>
-<!--navigation start-->
-<nav id="main-nav">
-    <ul>
-        <li><a href="">o mnie</a></li>
-        <li><a href="">umijętności</a></li>
-        <li><a href="">portfolio</a></li>
-        <li><a href="">kontakt</a></li>
-    </ul>
-</nav>
-<!--navigation stop-->
-<script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>  
+
+    <!--navigation start-->
+
+    <nav id="main-nav">
+        <div class="container">
+            <ul>
+                <li><a href="">o mnie</a></li>
+                <li><a href="">umijętności</a></li>
+                <li><a href="">portfolio</a></li>
+                <li><a href="">kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <!--    navigation stop-->
+
+    <!--header start-->
+    <header id="main-header">
+        <div class="main-header-content">
+            <h1>Joanna <span>Kowal</span></h1>
+            <h2>Front-End Developer</h2>
+        </div>
+    </header>
+    <!--header stop-->
+
+    <!--    about start-->
+    <section id="about">
+        <h2>O <span>mnie</span></h2>
+        <figure><img src="img/jan-nowak.jpg" alt="Jan Kowalski"></figure>
+        <article>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem fugiat, ad perferendis reprehenderit quasi, et itaque assumenda, autem non omnis necessitatibus dignissimos, aspernatur debitis delectus veritatis cumque. Expedita voluptas facilis, nisi possimus numquam dolorem dolore fuga commodi impedit tenetur distinctio eum hic voluptatum eligendi ipsum sunt accusantium labore odio iure iste vero esse. Nulla sapiente necessitatibus, nam voluptate beatae perspiciatis consequuntur natus, et iure quam dolores, quis pariatur repellendus ex animi dolore quos accusamus non aliquid fugit odit. Excepturi nesciunt saepe molestias qui vero quasi quibusdam doloribus nihil, reprehenderit laboriosam tempora cupiditate amet hic pariatur corrupti. Vel maxime dignissimos voluptates!</p>
+        </article>
+    </section>
+    <!--    about stop-->
+
+
+    <!--    skills start-->
+    <section id="skills">
+        <h2>Moje <span>umiejętności</span></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat blanditiis nihil facere, ipsum. Ad illo quo reiciendis animi. Nihil deserunt recusandae, fugit eveniet suscipit excepturi, rerum quam, maiores dolorum consequatur quibusdam. Sunt reprehenderit amet omnis, deleniti soluta placeat vel! Voluptatum porro molestiae praesentium doloremque aut?</p>
+        <div class="skills-icons">
+            <figure class="skills-icons-item"><img src="icons/html5.png" alt="Html">
+                <figcaption>Html</figcaption>
+            </figure>
+            <figure class="skills-icons-item"><img src="icons/css3.png" alt="Css3">
+                <figcaption>Css3</figcaption>
+            </figure>
+            <figure class="skills-icons-item"><img src="icons/js.png" alt="JavaScript">
+                <figcaption>JavaScript</figcaption>
+            </figure>
+            <figure class="skills-icons-item"><img src="icons/jquery.png" alt="jQuery">
+                <figcaption>jQuery</figcaption>
+            </figure>
+        </div>
+    </section>
+    <!--    skills stop-->
+
+    <!--    portfolio start-->
+    <section id="portfolio">
+        <h2>Moje <span>portfolio</span></h2>
+        <div class="portfolio-items">
+            <div class="portfolio-item" id="portfolio-item-1">
+                <div class="item-mask">
+                    <div class="item-content">
+                        <div class="item-content-iner">
+                            <h4>Lorem ipsum dolor.</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus minima soluta odit, nisi placeat totam eveniet pariatur odio at libero.</p>
+                            <h5>Lorem ipsum dolor sit.</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                            <a href="#"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item" id="portfolio-item-2">
+                <div class="item-mask">
+                    <div class="item-content">
+                        <div class="item-content-iner">
+                            <h4>Lorem ipsum dolor.</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus minima soluta odit, nisi placeat totam eveniet pariatur odio at libero.</p>
+                            <h5>Lorem ipsum dolor sit.</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                            <a href="#"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item" id="portfolio-item-3">
+                <div class="item-mask">
+                    <div class="item-content">
+                        <div class="item-content-iner">
+                            <h4>Lorem ipsum dolor.</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus minima soluta odit, nisi placeat totam eveniet pariatur odio at libero.</p>
+                            <h5>Lorem ipsum dolor sit.</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                            <a href="#"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    portfolio stop-->
+
+    <!--    contact start-->
+    <section id="contact">
+        <div class="contact-data">
+            <h2>Joanna <span>Kowal</span></h2>
+            <p>ul. Mlądzka 48/23<br> 04-136 Warszawa<br><br> tel: 786297904<br> email: <span>aska.szewczyk@gmail.com</span><br>
+            </p>
+
+            <div class="icon-social-media">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-google-plus"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="contact-form">
+            <form action="/action_page.ph" method="post">
+                <input type="text" placeholder="Imię i nazwisko">
+                <input type="email" placeholder="Email">
+                <textarea maxlength="180" placeholder="Wiadomość"></textarea>
+                <input type="submit" placeholder="Wyślij">
+            </form>
+        </div>
+    </section>
+    <!--    contact stop-->
+
+    <!--    footer start-->
+    <footer>
+        <p>Copyright Jan Kowalski</p>
+    </footer>
+    <!--    footer stop-->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
