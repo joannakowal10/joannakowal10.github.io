@@ -1,0 +1,383 @@
+/* GENERAL STYLES - START */
+
+@import "zmienne";
+@import "mixins";
+
+
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+section {
+    padding: 60px 0;
+    h3 {
+        font-family: 'Montserrat', sans-serif;
+        color: #333;
+        font-size: 1.2em;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .img-circle {
+        border-radius: 50%;
+        width: 100%;
+    }
+    .section-header {
+        margin-bottom: 70px;
+        text-align: center;
+        width: 100%;
+
+        .section-title {
+            font-family: 'Montserrat', sans-serif;
+            color: #333;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+            .section-caption {
+                font-family: 'Droid Serif', sans-serif;
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+section .section-header .social-links {
+    width: 40px;
+    height: 40px;
+    background-color: #222;
+    display: inline-block;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    color: $white-color;
+    transition: all 1s;
+    font-size: 1.1em;
+    margin: 5px;
+
+}
+
+section .section-header .social-links:hover {
+    background-color: $base-color;
+    color: $white-color;
+}
+
+#main-nav {
+    background-color: transparent;
+    transition: all .5s;
+
+    a.navbar-brand {
+        color: $white-color;
+        font-family: 'Droid Serif', sans-serif;
+        font-size: 2em;
+    }
+    .nav-item a {
+        color: $white-color;
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        transition: all .3s;
+        $:hover {
+            color: $base-color;
+        }
+    }
+}
+
+
+
+
+
+#main-nav.scroll {
+    background-color: rgba(14, 216, 214, 0.75);
+    $:hover {
+        color: #777;
+    }
+}
+
+
+
+
+
+#main-nav a.nav-link {
+    color: $white-color;
+    font-weight: 500;
+}
+
+#main-header {
+    background-image: url(../img/header/transparency.png),
+    url(../img/header/pictures_on_the_wall.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    color: $white-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .header-caption {
+        h2 {
+            font-family: 'Droid Serif', sans-serif;
+            font-size: 3em;
+
+        }
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 4em;
+            margin: 45px 0;
+        }
+        .read-more {
+            background-color: $base-color;
+            border: 1px solid $base-color;
+            font-family: 'Montserrat', sans-serif;
+            color: $white-color;
+            transition: all .3s;
+            padding: 15px 30px;
+            $:hover {
+                background-color: #fff;
+                border: 1px solid $base-color;
+                color: $base-color;
+            }
+        }
+
+
+    }
+}
+
+
+
+
+
+
+#services .fas {
+    background-color: $base-color;
+    border: 1px solid $base-color;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    line-height: 80px;
+    color: $white-color;
+    font-size: 1.8em;
+    transition: all 1s;
+    cursor: pointer;
+    $:hover {
+        background-color: $white-color;
+        color: $base-color;
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+#portfolio-image-background-1 {
+    background-image: url(../img/portfolio/box_of_cookies.jpg)
+}
+
+#portfolio-image-background-2 {
+    background-image: url(../img/portfolio/chaotic_paint.jpg)
+}
+
+#portfolio-image-background-3 {
+    background-image: url(../img/portfolio/chestnut_on_bracket.jpg)
+}
+
+#portfolio-image-background-4 {
+    background-image: url(../img/portfolio/child_with_blue_paint.jpg)
+}
+
+#portfolio-image-background-5 {
+    background-image: url(../img/portfolio/house_with_blue_doors.jpg)
+}
+
+#portfolio-image-background-6 {
+    background-image: url(../img/portfolio/typing_on_laptop.jpg)
+}
+
+#portfolio {
+    background-color: #f7f7f7;
+    .portfolio-item {
+        background-color: $white-color;
+    }
+}
+
+
+
+
+#portfolio-title {
+    font-size: 45px;
+    text-align: center;
+    color: black;
+    margin-top: 20px;
+
+}
+
+.portfolio-item {
+    top: 100px;
+    position: relative;
+}
+
+#portfolio .portfolio-item .portfolio-image-background {
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    transition: all 1s;
+}
+
+#portfolio .portfolio-item .portfolio-image-background .portfolio-image-mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(14, 216, 214, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white-color;
+    font-size: 2em;
+    opacity: 0;
+    transition: all 1s;
+
+}
+
+
+#portfolio .portfolio-image {
+    overflow: hidden;
+}
+
+#portfolio .portfolio-item .portfolio-image-background:hover {
+    transform: scale(1.2);
+
+}
+
+#portfolio .portfolio-item .portfolio-image-background .portfolio-image-mask:hover {
+    opacity: 1;
+}
+
+#portfolio .portfolio-item figcaption {
+    text-align: center;
+    padding: 25px;
+}
+
+
+.img-circle {
+    border-radius: 50%;
+    width: 100%;
+
+}
+
+#team .team-description {
+    margin-top: 40px;
+}
+
+.fab {
+    color: #333;
+}
+
+
+#main-nav {
+    background-color: transparent;
+}
+
+#main-nav a.navbar-brand {
+    color: $white-color;
+    font-family: 'Droid Serif', sans-serif;
+    font-size: 2em;
+}
+
+#main-nav .nav-item a {
+    color: $white-color;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    transition: all .3s;
+}
+
+#main-nav .nav-item a:hover {
+    color: $base-color;
+}
+
+#main-nav.scroll {
+    background-color: rgba(14, 216, 214, 0.75);
+}
+
+#main-nav.scroll .nav-item a:hover {
+    color: #777;
+}
+
+
+/* CONTACT - END */
+
+/* FOOTER - START */
+
+#main-footer {
+    padding: 10px 0;
+}
+
+#main-footer .copyright,
+#main-footer .footer-nav {
+    line-height: 50px;
+}
+
+#main-footer .footer-nav .footer-nav-item {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#main-footer .footer-nav .footer-nav-item a {
+    color: #777;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+#main-footer .footer-nav .footer-nav-item a:hover {
+    color: $base-color;
+}
+
+
+#contact {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/footer/world-map.jpg);
+}
+
+#contact .section-header,
+#contact .section-header .section-title {
+    color: $white-color;
+}
+
+#contact .contact-form .contact-form-column {
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#contact .contact-form .contact-form-column input,
+#contact .contact-form .contact-form-column textarea {
+    padding: 15px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+#contact .contact-form .contact-form-column textarea {
+    height: 100%;
+}
+
+#contact input[type="submit"] {
+    background-color: $base-color;
+    border: 1px solid $base-color;
+    color: $white-color;
+    margin-top: 30px;
+    transition: all 1s;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+#contact input[type="submit"]:hover {
+    background-color: $white-color;
+    color: $base-color;
+}
