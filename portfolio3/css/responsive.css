@@ -1,10 +1,4 @@
-@media all and (max-width: 1200px) {
-    #portfolio .portfolio-items .portfolio-item {}
-}
-
-
-
-@media all and (max-width: 992px) {
+@media all and (max-width: 1200px) @media all and (max-width: 992px) {
     #main-header .main-header-content {
         padding: 10%;
     }
