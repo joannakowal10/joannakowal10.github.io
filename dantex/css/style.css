@@ -1,0 +1,121 @@
+body {
+    background-color: #edebee;
+    background-image: url('/img/backgroun-newsletter.svg');
+    background-repeat: no-repeat;
+    background-position: 80% 30%;
+    width: 100%;
+    height: 100%;
+    color: #231f20;
+    font-family: "Rajdhani", sans-serif;
+    font-size: 24px;
+    margin: 0 auto;
+}
+
+#main-info,
+#icon,
+#buttons,
+#coment {
+    padding-left: 100px;
+}
+
+/*header start*/
+
+#main-header {
+    background-color: #fff;
+    width: 100%;
+}
+
+#main-header img {
+    height: 40px;
+    padding: 40px 0px 40px 100px;
+
+}
+
+/*header stop*/
+
+/*main-info start*/
+
+#main-info {
+    padding-top: 35px;
+}
+
+#main-info p:first-child {
+    color: #d9232e;
+    font-size: 36px;
+    font-weight: 400;
+    margin: auto;
+}
+
+#main-info p {
+    margin: auto;
+}
+
+/*main-info stop*/
+
+/*section icon start*/
+
+#icon figure {
+    display: inline-block;
+    width: 20%;
+    margin: 0 50px 20px 0;
+}
+
+.icons {
+    height: 90px;
+    margin: 70px 0 20px;
+}
+
+#icon figure h1 {
+    font-weight: 500;
+    margin: 0 auto;
+}
+
+#icon figure p {
+    font-size: 18px;
+    margin: 0 auto;
+}
+
+/*section icon stop*/
+
+/*section comment start*/
+
+#coment span {
+    color: #d9232e;
+    font-weight: bold;
+    margin: 0px;
+}
+
+/*section comment stop*/
+
+/*section buttons start*/
+
+.button {
+    border-radius: 8px;
+    padding: 13px;
+    color: #fff;
+    width: 180px;
+    border: 0px;
+    margin-right: 50px;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: "Rajdhani";
+
+}
+
+#buttons #btn-red {
+    background-color: #d9232e;
+}
+
+#buttons #btn-green {
+    background-color: #57a800;
+}
+
+/*section buttons stop*/
+
+/*
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+}
+*/
