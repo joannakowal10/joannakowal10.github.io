@@ -2,7 +2,7 @@ body {
     background-color: #edebee;
     background-image: url('/img/backgroun-newsletter.svg');
     background-repeat: no-repeat;
-    background-position: 80% 30%;
+    background-position: 80% 40%;
     width: 100%;
     height: 100%;
     color: #231f20;
@@ -18,12 +18,13 @@ body {
     padding-left: 100px;
 }
 
-/*header start*/
-
-#main-header {
+#main-header,
+footer {
     background-color: #fff;
     width: 100%;
 }
+
+/*header start*/
 
 #main-header img {
     height: 40px;
@@ -111,11 +112,3 @@ body {
 }
 
 /*section buttons stop*/
-
-/*
-footer {
-    width: 100%;
-    height: 80px;
-    background-color: #fff;
-}
-*/
