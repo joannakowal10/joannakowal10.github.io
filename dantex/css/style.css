@@ -112,3 +112,11 @@ footer {
 }
 
 /*section buttons stop*/
+
+/*footer start*/
+
+footer div {
+    height: 100px;
+    width: 100%;
+    background-color: #fff;
+}
