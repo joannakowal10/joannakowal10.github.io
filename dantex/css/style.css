@@ -1,4 +1,5 @@
 /*general style start*/
+<<<<<<< HEAD
 
 body {
     width: 100%;
@@ -10,15 +11,41 @@ body {
     margin: 0;
     overflow: hidden;
 
+=======
+* {
+    margin: 0 auto;
 }
+body {
+    width: 100%;
+    height: 100vh;
+    min-height:100vh;
+    color: #231f20;
+    font-family: "Rajdhani", sans-serif;
+    font-size: 1em;
+    margin: 0px;
+
+}
+
+/*
+section, #main-header img {
+    padding-left: 10%;
+    padding-top: 2vh;
+>>>>>>> 9b6e6e22444d216a4336a84c8dfd18f664b096b8
+}
+*/
 
 #main-header,
 footer {
+<<<<<<< HEAD
     background-color: #fff;
+=======
+    background-color: #fff; 
+>>>>>>> 9b6e6e22444d216a4336a84c8dfd18f664b096b8
 }
 
 #content {
     background-color: #edebee;
+<<<<<<< HEAD
     background-image: url('../img/backgroun-newsletter.svg');
     background-repeat: no-repeat;
     background-position: 90% 40%;
@@ -29,10 +56,29 @@ footer {
 
 }
 
+=======
+    background-image: url('/img/backgroun-newsletter.svg');
+    background-repeat: no-repeat;
+    background-position: 110% 40%;
+    max-height: 70vh;
+    min-height: 70vh;
+}
+>>>>>>> 9b6e6e22444d216a4336a84c8dfd18f664b096b8
 /*general style stop*/
 
 /*header start*/
+#main-header {
+    height: 15vh;
+    position: relative;
+    min-height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
 
+<<<<<<< HEAD
 #main-header {
     height: 15vh;
     min-height: 60px;
@@ -42,6 +88,12 @@ footer {
     align-items: center;
 
 }
+=======
+#main-header img {
+    height: 5vh;
+    min-height: 31px;
+
+>>>>>>> 9b6e6e22444d216a4336a84c8dfd18f664b096b8
 
 #main-header img {
     height: 5vh;
@@ -52,10 +104,13 @@ footer {
 
 /*main-info start*/
 
+<<<<<<< HEAD
 #main-info p {
     margin: 0px;
 }
 
+=======
+>>>>>>> 9b6e6e22444d216a4336a84c8dfd18f664b096b8
 #main-info p:first-child {
     color: #d9232e;
     font-size: 1.8em;
@@ -84,7 +139,11 @@ footer {
 
 #icon figure p {
     font-size: 0.9em;
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> 9b6e6e22444d216a4336a84c8dfd18f664b096b8
 }
 
 /*section icon stop*/
@@ -130,14 +189,25 @@ footer {
 footer {
     min-height: 15vh;
     display: flex;
+<<<<<<< HEAD
     justify-content: center;
+=======
+    justify-content:  center;
+>>>>>>> 9b6e6e22444d216a4336a84c8dfd18f664b096b8
     align-items: center;
     width: 100%;
     background-color: #fff;
 }
+<<<<<<< HEAD
 
 /*footer stop*/
 
 .remove {
     display: none;
 }
+=======
+/*footer stop*/
+.remove {
+    display: none;
+}
+>>>>>>> 9b6e6e22444d216a4336a84c8dfd18f664b096b8
