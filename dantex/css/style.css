@@ -125,3 +125,6 @@ footer div {
     background-color: #fff;
 }
 /*footer stop*/
+.remove {
+    display: none;
+}
