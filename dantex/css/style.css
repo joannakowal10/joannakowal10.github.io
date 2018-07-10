@@ -1,54 +1,57 @@
+/*general style start*/
+* {
+    margin: 0 auto;}
+
 body {
     background-color: #edebee;
     background-image: url('/img/backgroun-newsletter.svg');
     background-repeat: no-repeat;
-    background-position: 80% 40%;
+    background-position: 110% 40%;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    min-height:100vh;
+    overflow: hidden;
     color: #231f20;
     font-family: "Rajdhani", sans-serif;
-    font-size: 24px;
-    margin: 0 auto;
+    font-size: 1em;
+
 }
 
-#main-info,
-#icon,
-#buttons,
-#coment {
-    padding-left: 100px;
+section, #main-header img {
+    padding-left: 10%;
+    padding-top: 2vh;
 }
 
 #main-header,
 footer {
-    background-color: #fff;
-    width: 100%;
+    background-color: #fff; 
 }
+#content {
+    max-height: 70vh;
+    min-height: 70vh;
+}
+/*general style stop*/
 
 /*header start*/
+#main-header {
+    height: 15vh;
+    position: relative
+}
 
 #main-header img {
-    height: 40px;
-    padding: 40px 0px 40px 100px;
-
+    height: 5vh;
+    position: absolute;
+    transform: translateY(2.5vh);
 }
 
 /*header stop*/
 
 /*main-info start*/
 
-#main-info {
-    padding-top: 35px;
-}
-
 #main-info p:first-child {
     color: #d9232e;
-    font-size: 36px;
+    font-size: 1.8em;
     font-weight: 400;
-    margin: auto;
-}
-
-#main-info p {
-    margin: auto;
 }
 
 /*main-info stop*/
@@ -58,22 +61,22 @@ footer {
 #icon figure {
     display: inline-block;
     width: 20%;
-    margin: 0 50px 20px 0;
+    margin: 0 7vh 5vh 0;
 }
 
 .icons {
-    height: 90px;
-    margin: 70px 0 20px;
+    height: 10vh;
+    margin: 5vh 0 2vh;
 }
 
 #icon figure h1 {
     font-weight: 500;
-    margin: 0 auto;
+
 }
 
 #icon figure p {
-    font-size: 18px;
-    margin: 0 auto;
+    font-size: 0.9em;
+  
 }
 
 /*section icon stop*/
@@ -83,7 +86,7 @@ footer {
 #coment span {
     color: #d9232e;
     font-weight: bold;
-    margin: 0px;
+    margin-bottom: 4em;
 }
 
 /*section comment stop*/
@@ -92,13 +95,13 @@ footer {
 
 .button {
     border-radius: 8px;
-    padding: 13px;
+    padding: 1.2vh 1.5vh;
     color: #fff;
-    width: 180px;
+    width: 12vw;
     border: 0px;
-    margin-right: 50px;
-    margin-bottom: 50px;
-    font-size: 24px;
+    margin-bottom: 43em;
+    margin-right: 4em;
+    font-size: 1em;
     font-weight: 500;
     font-family: "Rajdhani";
 
@@ -117,7 +120,8 @@ footer {
 /*footer start*/
 
 footer div {
-    height: 100px;
+    height: 15vh;
     width: 100%;
     background-color: #fff;
 }
+/*footer stop*/
