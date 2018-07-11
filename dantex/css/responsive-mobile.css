@@ -38,7 +38,7 @@
         width: 49%;
         font-size: 16px;
         margin: 0 auto;
-        padding: 5px 0;
+        padding: 15px 0;
     }
     .button:first-child {
         margin-right: 2%;
@@ -64,6 +64,7 @@
 
     #icon {
         width: auto;
+        text-align: center;
     }
     #icon figure {
         width: 30%;
