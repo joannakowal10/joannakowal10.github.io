@@ -79,6 +79,7 @@ footer {
 /*section icon start*/
 #icon{
     width: 900px;
+    text-align: left;
 }
 
 #icon figure {
