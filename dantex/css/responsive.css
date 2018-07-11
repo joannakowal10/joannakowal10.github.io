@@ -1,19 +1,31 @@
 @media (max-width:768px) {
     body {
         overflow: scroll;
-        text-align: center
+        text-align: center;
+    }
+    #main-header {
+        padding: 15px;
     }
     #main-header img {
-        height: 3vh;
+        min-height: 20px;
     }
     #content {
-        padding: 5px;
+        padding: 15px;
+        height: auto;
+        background-position: 190% 5%;
+/*
+        display: flex;
+        justify-content: center;
+*/
+    }
+    #content-inner #main-info p:first-child {
+        font-size: 1.4em;
+        
     }
 
     #icon figure {
         width: 100%;
         margin: 0;
-        text-align: center;
     }
     .icons {
         height: 15vh;
