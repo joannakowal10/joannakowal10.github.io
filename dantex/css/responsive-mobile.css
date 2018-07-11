@@ -21,7 +21,9 @@
     #content-inner #main-info p:first-child {
         font-size: 1.4em;
     }
-
+    #icon {
+        width: auto;
+    }
     #icon figure {
         width: 100%;
         margin: 0;

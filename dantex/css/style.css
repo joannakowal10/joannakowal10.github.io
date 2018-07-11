@@ -1,6 +1,10 @@
 /*general style start*/
 * {
-    box-sizing: border-box;
+   
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+    
 }
 
 body {
@@ -24,12 +28,13 @@ footer {
     background-position: 90% 40%;
     min-height: 70vh;
     margin: 0;
+    padding: 50px;
 }
 
 #content-inner {
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto; 
+/*    margin: 0 auto; */
 }
 
 /*general style stop*/
@@ -39,12 +44,14 @@ footer {
 #main-header {
     height: 15vh;
     min-height: 60px;
-    max-width: 1200px;
-    margin: 0 auto;
-    position:relative;
+    max-width: 1300px;
+    margin: 0;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: left;
+    padding-left: 50px;
+    
 
 }
 
@@ -70,15 +77,18 @@ footer {
 /*main-info stop*/
 
 /*section icon start*/
+#icon{
+    width: 900px;
+}
 
 #icon figure {
     display: inline-block;
-    width: 20%;
-    margin: 0 7vh 5vh 0;
+    width: 30%;
+    margin: 0;
 }
 
 .icons {
-    height: 10vh;
+    height: 90px;
     margin: 5vh 0 2vh;
 }
 
@@ -89,6 +99,7 @@ footer {
 
 #icon figure p {
     font-size: 0.9em;
+/*    margin-bottom: 20px;*/
 
 }
 
@@ -108,14 +119,15 @@ footer {
 
 .button {
     border-radius: 8px;
-/*    padding: 10px 0;*/
     color: #fff;
-    width: 12vw;
+    width: 170px;
     border: 0px;
-    margin-right: 3vw;
+    margin-right: 20px;
     font-size: 1em;
+    padding: 5ph 0;
     font-weight: 500;
     font-family: "Rajdhani";
+    white-space: nowrap;
 
 }
 
