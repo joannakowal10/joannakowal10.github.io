@@ -1,0 +1,96 @@
+@media (max-width:480px) {
+    body {
+        overflow: scroll;
+        text-align: center;
+    }
+    #main-header {
+        padding: 15px;
+    }
+    #main-header img {
+        min-height: 20px;
+    }
+    #content {
+        padding: 15px;
+        height: auto;
+        background-position: 190% 5%;
+    }
+
+    #content-inner #main-info p:first-child {
+        font-size: 1.4em;
+    }
+
+    #icon figure {
+        width: 100%;
+        margin: 0;
+    }
+    .icons {
+        height: 15vh;
+    }
+
+    #buttons {
+        font-size: 0px;
+    }
+    .button {
+        width: 49%;
+        font-size: 16px;
+        margin: 0 auto;
+    }
+    .button:first-child {
+        margin-right: 2%;
+    }
+}
+
+@media (min-width:481px) and (max-width:760px) {
+    body {
+        overflow: scroll;
+    }
+    #main-header {
+        padding: 20px;
+    }
+    #content {
+        padding: 15px;
+        height: auto;
+        background-position: 150% 10%;
+        text-align: center;
+    }
+/*
+    #content-inner {
+        text-align: center;
+    }
+*/
+
+    .icons {
+        height: 18vh;
+    }
+    
+    #icon figure {
+        width: 28%;
+        margin-right: 10px;
+    }
+    #icon figure:last-child {
+        margin: 0;
+    } {
+        width: 28%;
+        margin-right: 5px;
+    }
+    
+    
+    #icon p {
+        text-align: justify;
+        margin: 0 auto;
+    }
+    
+    #buttons {
+        font-size: 0px;
+    }
+    
+    .button {
+        width: 30%;
+        font-size: 14px;
+        margin: 0 auto;
+    }
+    
+    .button:first-child {
+        margin-right: 4%;
+    }
+}
