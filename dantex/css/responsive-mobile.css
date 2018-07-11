@@ -68,6 +68,7 @@
     #icon {
         width: auto;
         justify-content: center;
+        text-align: center;
     }
     #icon figure {
         width: 30%;
