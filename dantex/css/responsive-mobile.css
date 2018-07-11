@@ -67,7 +67,7 @@
 
     #icon {
         width: auto;
-        text-align: center;
+        justify-content: center;
     }
     #icon figure {
         width: 30%;
