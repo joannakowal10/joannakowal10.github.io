@@ -51,6 +51,9 @@
         text-align: left;
         
     }
+    textarea {
+        width: 100%;
+    }
     #accept, #resignation {
         transform: translateY(100);
 
