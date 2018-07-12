@@ -14,6 +14,7 @@ body {
     font-family: "Rajdhani", sans-serif;
     font-size: 1em;
     margin: 0;
+  
 }
 
 #main-header,
@@ -24,8 +25,6 @@ footer {
     display: none;
     float: left;
     justify-content: center;
-   
-   
 }
 /*general style stop*/
 
@@ -35,15 +34,14 @@ footer {
 #main-header {
     height: 15vh;
     min-height: 60px;
-    max-width: 1300px;
-    margin: 0;
+    margin: 0 auto;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: left;
-    padding-left: 50px;
+    max-width: 1200px;
+    padding: 0px 15px;
     
-
 }
 
 #main-header img {
@@ -53,26 +51,29 @@ footer {
 
 /*header stop*/
 #content {
-    background-color: #edebee;
     background-image: url('../img/backgroun-newsletter.svg');
     background-repeat: no-repeat;
     background-position: 90% 40%;
     min-height: 70vh;
-    margin: 0;
-    padding: 50px;
+    margin: 0 auto;
+   
+    display: flex;
+    align-items: flex-start;
+    background-color: #edebee;
 }
 
 #content-inner {
     width: 100%;
     max-width: 1200px;
-/*    margin: 0 auto; */
+    margin: 0 auto; 
+     padding: 20px 15px;
 }
 
 
 /*main-info start*/
 
 #main-info p, #accept p, #form-section p , #resignation p{
-    margin: 0px;
+    margin: 0 auto;
 }
 
 #main-info p:first-child, #accept p:first-child, #form-section p:first-child, #resignation:first-child {
@@ -84,15 +85,19 @@ footer {
 /*main-info stop*/
 
 /* icon start*/
-#icon{
+#icon {
     width: 900px;
     text-align: left;
+    font-size: 0;
+    margin: 0 -15px;
 }
 
 #icon figure {
     display: inline-block;
-    width: 30%;
+    width: 33.33%;
     margin: 0;
+    font-size: initial;
+    padding: 0 15px;
 }
 
 .icons {
@@ -161,14 +166,12 @@ textarea {
     width: 40%;
     height: 15vh;
 }
-input[type:"radio" i] {
-    border-radius: 0px;
-    
-}
-/*footer start*/
+
 .bold {
     font-weight: 600; 
 }
+
+/*footer start*/
 footer {
     min-height: 15vh;
     display: flex;
@@ -178,5 +181,29 @@ footer {
     background-color: #fff;
 }
 
+textarea {
+    display: none;
+}
+.radio-btn {
+   display: inline-block;
+   border: 2px solid red;
+   width: 12px;
+   height: 12px;
+   background-color: white;
+}
+
+.radio-input:checked+.radio-btn{
+    background-color: red;
+    
+}
+
+.radio-input {
+    display: none;
+}
+.radio-input:checked+.radio-btn+textarea{
+
+    display: block;
+    
+}
 /*footer stop*/
 

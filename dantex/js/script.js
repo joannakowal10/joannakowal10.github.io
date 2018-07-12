@@ -11,10 +11,11 @@ $(document).ready(function () {
     $("#btn-resignation").click(function () {
         $("#form-section").show();
         $("#content-inner").hide();
-});
-$("#send").click(function () {
+}).click ();
+$("form").submit(function () {
         $("#resignation").show();
         $("#form-section").hide();
+    return false;
 });
    
     })

@@ -51,11 +51,12 @@
         text-align: left;
         
     }
+    
     textarea {
-        width: 100%;
+        width: 80%;
     }
     #accept, #resignation {
-        transform: translateY(100);
+        line-height: 100%;
 
     }
 }
@@ -101,6 +102,7 @@
         width: 30%;
         font-size: 14px;
         margin: 0 auto;
+        margin-bottom: 10px;
         padding: 7px;
     }
     
@@ -117,5 +119,8 @@
     #form-section {
         text-align: left;
         
+    }
+    textarea {
+        width: 80%;
     }
 }
