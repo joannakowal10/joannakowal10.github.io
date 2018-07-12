@@ -38,20 +38,29 @@
         width: 49%;
         font-size: 16px;
         margin: 0 auto;
-        padding: 10px 0;
+        padding: 5px 10px;
     }
     .button:first-child {
         margin-right: 2%;
     }
+    .long-button {
+        width: auto;
+    }
+    
+    #form-section {
+        text-align: left;
+        
+    }
+    #accept, #resignation {
+/*        float: none;*/
+    }
 }
 
 @media (min-width:481px) and (max-width:760px) {
-    * { text-align: center;
-        
-    }
+   
     body {
         overflow: scroll;
-        text-align: center;
+/*        text-align: center;*/
     }
     #main-header {
         padding: 20px;
@@ -62,6 +71,7 @@
         padding: 25px;
         height: auto;
         background-position: 150% 10%;
+        text-align: center;
         
     }
 
@@ -92,5 +102,16 @@
     
     .button:first-child {
         margin-right: 4%;
+    }
+    .long-button {
+        width: auto;
+    }
+    #accept, #resignation {
+        float: none;
+    }
+    
+    #form-section {
+        text-align: left;
+        
     }
 }

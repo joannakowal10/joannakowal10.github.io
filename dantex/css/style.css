@@ -20,24 +20,15 @@ body {
 footer {
     background-color: #fff;
 }
-
-#content {
-    background-color: #edebee;
-    background-image: url('../img/backgroun-newsletter.svg');
-    background-repeat: no-repeat;
-    background-position: 90% 40%;
-    min-height: 70vh;
-    margin: 0;
-    padding: 50px;
+#accept, #resignation, #form-section {
+    display: none;
+    float: left;
+    justify-content: center;
+   
+   
 }
-
-#content-inner {
-    width: 100%;
-    max-width: 1200px;
-/*    margin: 0 auto; */
-}
-
 /*general style stop*/
+
 
 /*header start*/
 
@@ -61,14 +52,30 @@ footer {
 }
 
 /*header stop*/
+#content {
+    background-color: #edebee;
+    background-image: url('../img/backgroun-newsletter.svg');
+    background-repeat: no-repeat;
+    background-position: 90% 40%;
+    min-height: 70vh;
+    margin: 0;
+    padding: 50px;
+}
+
+#content-inner {
+    width: 100%;
+    max-width: 1200px;
+/*    margin: 0 auto; */
+}
+
 
 /*main-info start*/
 
-#main-info p {
+#main-info p, #accept p, #form-section p , #resignation p{
     margin: 0px;
 }
 
-#main-info p:first-child {
+#main-info p:first-child, #accept p:first-child, #form-section p:first-child, #resignation:first-child {
     color: #d9232e;
     font-size: 1.8em;
     font-weight: 400;
@@ -76,7 +83,7 @@ footer {
 
 /*main-info stop*/
 
-/*section icon start*/
+/* icon start*/
 #icon{
     width: 900px;
     text-align: left;
@@ -121,29 +128,47 @@ footer {
 .button {
     border-radius: 8px;
     color: #fff;
-    width: 170px;
+    width: 130px;
     border: 0px;
     margin-right: 20px;
+    margin-top: 20px;
     font-size: 1em;
-    padding: 5ph 0;
+    padding: 5px 20px;
     font-weight: 500;
     font-family: "Rajdhani";
     white-space: nowrap;
 
 }
 
-#btn-red {
+.long-button {
+    width: auto;
+    
+}
+
+.btn-red {
     background-color: #d9232e;
 }
 
-#btn-green {
+.btn-green {
     background-color: #57a800;
 }
 
 /*section buttons stop*/
 
+textarea {
+    border: 1px solid;
+    border-color: #d9232e;
+    width: 40%;
+    height: 15vh;
+}
+input[type:"radio" i] {
+    border-radius: 0px;
+    
+}
 /*footer start*/
-
+.bold {
+    font-weight: 600; 
+}
 footer {
     min-height: 15vh;
     display: flex;
@@ -155,6 +180,3 @@ footer {
 
 /*footer stop*/
 
-.remove {
-    display: none;
-}

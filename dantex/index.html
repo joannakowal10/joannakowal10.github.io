@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive-mobile.css">
-    
+
 </head>
 <!--BODY START-->
 
@@ -20,41 +20,65 @@
     </header>
     <div id="content">
         <div id="content-inner">
-        <section id="main-info">
-            <p>Czy chcesz zrezygnować z newslettera?</p>
-            <p>Pamiętaj, że subskrybcja ma swoje zalety:</p>
+            <section id="main-info">
+                <p>Czy chcesz zrezygnować z newslettera?</p>
+                <p>Pamiętaj, że subskrybcja ma swoje zalety:</p>
+            </section>
+            <section id="icon">
+                <figure id="first-icon">
+                    <img src="img/newsletter.svg" class="icons" alt="">
+                    <h1>Header One</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend efficitur elit, eget porttitor diam finibus ac.</p>
+                </figure>
+                <figure id="second-icon">
+                    <img src="img/mobile-phone.svg" class="icons" alt="">
+                    <h1>Header Two</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend efficitur elit, eget porttitor diam finibus ac.</p>
+                </figure>
+                <figure id="third-icon">
+                    <img src="img/investment.svg" class="icons" alt="">
+                    <h1>Header Three</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend efficitur elit, eget porttitor diam finibus ac.</p>
+                </figure>
+            </section>
+            <section id="coment">
+                <p>Dodatkowo dla naszych subskrybentów <span>darmowe miejsca parkingowe!</span></p>
+            </section>
+            <section id="buttons">
+                <button id="btn-resignation" class="button btn-red">REZYGNUJĘ :(</button>
+                <button id="btn-accept" class="button btn-green">ZOSTAJĘ!</button>
+            </section>
+        </div>
+        <section id="accept">
+            <p>Dziękujęmy za zaufanie!</p>
+            <p>Mamy nadzieję, że nasze e-maile przyniosą Ci nowe korzyści.</p>
+            <button id="" class="button btn-return btn-red">WRÓĆ</button>
         </section>
-        <section id="icon">
-            <figure id="first-icon">
-                <img src="img/newsletter.svg" class="icons" alt="">
-                <h1>Header One</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend efficitur elit, eget porttitor diam finibus ac.</p>
-            </figure>
-            <figure id="second-icon">
-                <img src="img/mobile-phone.svg" class="icons" alt="">
-                <h1>Header Two</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend efficitur elit, eget porttitor diam finibus ac.</p>
-            </figure>
-            <figure id="third-icon">
-                <img src="img/investment.svg" class="icons" alt="">
-                <h1>Header Three</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend efficitur elit, eget porttitor diam finibus ac.</p>
-            </figure>
+        <section id="form-section">
+            <p>Szkoda, że się rozstajemy. Mamy do Ciebie drobną prośbę.</p>
+            <p>Twoja opinia jest bardzo cenna, żeby ulepszyć nasz produkt.<br>Dlatego prosimy o uzupełnienie tej <span class="bold">ankiety:</span></p>
+            <form action="form.php" method="post">
+                <input type="radio" name="gender" value="male">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend efficitur elit, eget porttitor diam finibus ac.<br>
+                <input type="radio" name="" value="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend efficitur elit<br>
+                <input type="radio" name="" value="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend efficitur elit<br>
+                <input type="radio" name="" value="" checked>Inna odpowiedź<br>
+                <textarea maxlength="1000"></textarea><br>
+                <button id="send" class="button btn-red long-button">WYŚLIJ I WYPISZ MNIE Z NEWSLETTERA</button>
+                <br>
+            </form>
         </section>
-        <section id="coment">
-            <p>Dodatkowo dla naszych subskrybentów <span>darmowe miejsca parkingowe!</span></p>
-        </section>
-        <section id="buttons">
-            <button id="btn-red" class="button">REZYGNUJĘ&nbsp;:(</button>
-            <button id="btn-green" class="button">ZOSTAJĘ!</button>
+        <section id="resignation">
+            <p>Zostałeś pomyślnie wypisany z naszej listy subskrybcyjnej</p>
+            <p>Dziękujemy za Twój czas i mamy nadzieję, że spotkamy się w przyszłości</p>
+            <button class="button btn-return btn-red">WRÓĆ</button>
         </section>
         </div>
-    </div>
-    <footer>
-        <p>Copyright © 2018</p>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
+        <footer>
+            <p>Copyright © 2018</p>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="js/script.js"></script>
+    
 </body>
 <!--BODY STOP-->
 
