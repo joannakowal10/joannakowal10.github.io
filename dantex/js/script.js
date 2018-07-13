@@ -6,12 +6,15 @@ $(document).ready(function () {
     });
    $(".btn-return").click(function (){
       $("#accept").hide();
+       $("#resignation").hide();
+       $("#form-section").hide();
         $("#content-inner").show();
    });
     $("#btn-resignation").click(function () {
         $("#form-section").show();
         $("#content-inner").hide();
-}).click ();
+})
+//        .click ();
 $("form").submit(function () {
         $("#resignation").show();
         $("#form-section").hide();
@@ -19,4 +22,4 @@ $("form").submit(function () {
 });
    
     })
-     
+//     

@@ -56,19 +56,25 @@ footer {
     background-position: 90% 40%;
     min-height: 70vh;
     margin: 0 auto;
-   
     display: flex;
     align-items: flex-start;
     background-color: #edebee;
 }
 
-#content-inner {
+#content-inner{
     width: 100%;
     max-width: 1200px;
     margin: 0 auto; 
-     padding: 20px 15px;
+    padding: 20px 15px;
 }
 
+.first {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 20px 15px;
+    
+}
 
 /*main-info start*/
 
@@ -76,7 +82,7 @@ footer {
     margin: 0 auto;
 }
 
-#main-info p:first-child, #accept p:first-child, #form-section p:first-child, #resignation:first-child {
+#main-info p:first-child, #accept p:first-child, #form-section p:first-child, #resignation p:first-child {
     color: #d9232e;
     font-size: 1.8em;
     font-weight: 400;
@@ -205,5 +211,5 @@ textarea {
     display: block;
     
 }
-/*footer stop*/
 
+/*footer stop*/
