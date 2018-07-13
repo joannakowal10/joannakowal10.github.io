@@ -75,7 +75,6 @@ footer {
     padding: 20px 15px;
     
 }
-
 /*main-info start*/
 
 #main-info p, #accept p, #form-section p , #resignation p{
@@ -196,9 +195,11 @@ textarea {
    width: 12px;
    height: 12px;
    background-color: white;
+   margin-right: 10px;
+   
 }
 
-.radio-input:checked+.radio-btn{
+.radio-input:checked+div>.radio-btn{
     background-color: red;
     
 }
@@ -206,10 +207,14 @@ textarea {
 .radio-input {
     display: none;
 }
-.radio-input:checked+.radio-btn+textarea{
-
-    display: block;
+.radio-input:checked+div+textarea
+ {
+   display: block;
     
 }
 
-/*footer stop*/
+.label-style {
+   padding: 10px 10px 10px 0px;  
+
+}
+

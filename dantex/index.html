@@ -49,34 +49,41 @@
                 <button id="btn-accept" class="button btn-green">ZOSTAJĘ!</button>
             </section>
         </div>
-            <section id="accept" class="first">
-                <p>Dziękujęmy za zaufanie!</p>
-                <p>Mamy nadzieję, że nasze e-maile przyniosą Ci nowe korzyści.</p>
-                <button id="" class="button btn-return btn-red">WRÓĆ</button>
-            </section>
-            <section id="form-section" class="first">
-                <p>Szkoda, że się rozstajemy. Mamy do Ciebie drobną prośbę.</p>
-                <p>Twoja opinia jest bardzo cenna, żeby ulepszyć nasz produkt.<br>Dlatego prosimy o uzupełnienie tej <span class="bold">ankiety:</span></p>
-                <form action="form.php" method="post">
-                    <input id="answer1" type="radio" name="answer" value="" class="radio-input">
-                    <div class="label-style"><label class="radio-btn" for="answer1" id=""></label>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend efficitur elit, eget porttitor diam finibus ac.</div>
-                    <input id="answer2" type="radio" name="answer" value="" class="radio-input">
+        <section id="accept" class="first">
+            <p>Dziękujemy za zaufanie!</p>
+            <p>Mamy nadzieję, że nasze e-maile przyniosą Ci nowe korzyści.</p>
+            <button id="" class="button btn-return btn-red">WRÓĆ</button>
+        </section>
+        <section id="form-section" class="first">
+            <p>Szkoda, że się rozstajemy. Mamy do Ciebie drobną prośbę.</p>
+            <p>Twoja opinia jest bardzo cenna, żeby ulepszyć nasz produkt.<br>Dlatego prosimy o uzupełnienie tej <span class="bold">ankiety:</span></p>
+            <form action="form.php" method="post" id="formularz">
+                <div class="label-style"><input id="answer1" type="radio" name="answer" value="" class="radio-input">
+                    <div><label class="radio-btn" for="answer1" id=""></label>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem esse similique blanditiis recusandae quia, quo, facilis aliquam consequatur, nulla praesentium, eius sit. Ad, excepturi incidunt accusamus laboriosam ab quis eos asperiores, quae libero modi facere quasi aut.</div>
+                </div>
+                <div class="label-style"><input id="answer2" type="radio" name="answer" value="" class="radio-input">
                     <div><label class="radio-btn" for="answer2" id=""></label>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend efficitur elit, eget porttitor diam finibus ac.</div>
-                    <input id="answer3" type="radio" name="answer" value="" class="radio-input">
+                </div>
+                <div class="label-style"><input id="answer3" type="radio" name="answer" value="" class="radio-input">
                     <div><label class="radio-btn" for="answer3" id=""></label>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend efficitur elit, eget porttitor diam finibus ac.</div>
+                </div>
+                <div class="label-style">
                     <input id="answer4" type="radio" name="answer" value="" class="radio-input">
-                    <div><label class="radio-btn" for="answer4" id=""></label>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend efficitur elit, eget porttitor diam finibus ac.</div>
-                    <textarea maxlength="1000"></textarea>
-                    <button id="send" class="button btn-red long-button">WYŚLIJ I WYPISZ MNIE Z NEWSLETTERA</button>
-                    <br>
-                </form>
-            </section>
-            <section id="resignation" class="first">
-                <p>Zostałeś pomyślnie wypisany z naszej listy subskrybcyjnej</p>
-                <p>Dziękujemy za Twój czas i mamy nadzieję, że spotkamy się w przyszłości</p>
-                <button class="button btn-return btn-red">WRÓĆ</button>
-            </section>
-        </div>
+                    <div>
+                        <label class="radio-btn" for="answer4" id=""></label>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend efficitur elit, eget porttitor diam finibus ac.
+                    </div>
+                </div>
+                <textarea maxlength="1000"></textarea>
+                <button id="send" class="button btn-red long-button">WYŚLIJ I WYPISZ MNIE Z NEWSLETTERA</button>
+                <br>
+            </form>
+        </section>
+        <section id="resignation" class="first">
+            <p>Zostałeś pomyślnie wypisany z naszej listy subskrybcyjnej</p>
+            <p>Dziękujemy za Twój czas i mamy nadzieję, że spotkamy się w przyszłości</p>
+            <button class="button btn-return btn-red">WRÓĆ</button>
+        </section>
+    </div>
 
     <footer>
         <p>Copyright © 2018</p>
