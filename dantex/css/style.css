@@ -188,7 +188,7 @@ textarea {
 }
 
 .radio-btn {
-   display: inline-flex;
+/*   display: inline-flex;*/
    border: 2px solid #d9232e;
    min-width: 12px;
    height: 12px;
@@ -197,20 +197,19 @@ textarea {
    
 }
 
+.radio-input {
+    display: none;
+}
+
 .radio-input:checked+.radio-btn{
     background-color: #d9232e;
     
 }
 
-.radio-input {
-    display: none;
-}
+.radio-input:checked+.radio-btn+textarea
 
-/*.radio-input:checked+div+textarea*/
-/*.radio-input:checked+div>.radio-btn+textarea*/
-/*div>.radio-input:checked+div+textarea*/
  {
-   display: block;  
+   display: inline-block;
 }
 
 .label-style {
@@ -218,6 +217,4 @@ textarea {
    padding: 10px 10px 10px 0px;  
 
 }
-#first-label {
-    width: 12px;
-}
+
