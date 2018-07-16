@@ -1,10 +1,10 @@
 /*general style start*/
+
 * {
-   
+
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box
-    
+    box-sizing: border-box;
 }
 
 body {
@@ -12,22 +12,35 @@ body {
     height: 100vh;
     color: #231f20;
     font-family: "Rajdhani", sans-serif;
-    font-size: 1em;
+    font-size: 15px;
     margin: 0;
-  
+
 }
 
 #main-header,
 footer {
     background-color: #fff;
 }
-#accept, #resignation, #form-section {
+
+#accept,
+#resignation,
+#form-section {
     display: none;
     float: left;
     justify-content: center;
 }
-/*general style stop*/
 
+h1 {
+    font-size: 32px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 28px;
+    margin: 0 auto;
+}
+
+/*general style stop*/
 
 /*header start*/
 
@@ -41,7 +54,7 @@ footer {
     justify-content: left;
     max-width: 1200px;
     padding: 0px 15px;
-    
+
 }
 
 #main-header img {
@@ -50,6 +63,7 @@ footer {
 }
 
 /*header stop*/
+
 #content {
     background-image: url('../img/backgroun-newsletter.svg');
     background-repeat: no-repeat;
@@ -57,39 +71,55 @@ footer {
     min-height: 70vh;
     margin: 0 auto;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     background-color: #edebee;
 }
 
-#content-inner{
+#content-inner {
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto; 
+    margin: 0 auto;
     padding: 20px 15px;
+}
+
+.bold {
+    font-weight: 600;
 }
 
 .first {
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto; 
+    margin: 0 auto;
     padding: 20px 15px;
-    
+
 }
+.lead {
+    margin-bottom: 100px;
+    font-size: 18px;
+}
+
 /*main-info start*/
 
-#main-info p, #accept p, #form-section p , #resignation p{
+#main-info p,
+#accept p,
+#form-section p,
+#resignation p {
     margin: 0 auto;
 }
 
-#main-info p:first-child, #accept p:first-child, #form-section p:first-child, #resignation p:first-child {
+#main-info h1,
+#accept h1,
+#form-section h1,
+#resignation h1 {
     color: #d9232e;
-    font-size: 1.8em;
+/*    font-size: 1.8em;*/
     font-weight: 400;
 }
 
 /*main-info stop*/
 
 /* icon start*/
+
 #icon {
     width: 900px;
     text-align: left;
@@ -110,14 +140,14 @@ footer {
     margin: 5vh 0 2vh;
 }
 
-#icon figure h1 {
+#icon figure h2 {
     font-weight: 500;
 
 }
 
 #icon figure p {
     font-size: 0.9em;
-/*    margin-bottom: 20px;*/
+    /*    margin-bottom: 20px;*/
 }
 
 /*section icon stop*/
@@ -149,7 +179,7 @@ footer {
 }
 
 .long-button {
-    width: auto;   
+    width: auto;
 }
 
 .btn-red {
@@ -162,18 +192,12 @@ footer {
 
 /*section buttons stop*/
 
-textarea {
-    border: 1px solid;
-    border-color: #d9232e;
-    width: 40%;
-    height: 15vh;
-}
-
 .bold {
-    font-weight: 600; 
+    font-weight: 600;
 }
 
 /*footer start*/
+
 footer {
     min-height: 15vh;
     display: flex;
@@ -183,38 +207,48 @@ footer {
     background-color: #fff;
 }
 
-textarea {
-    display: none;
-}
+/*footer stop*/
 
 .radio-btn {
-/*   display: inline-flex;*/
-   border: 2px solid #d9232e;
-   min-width: 12px;
-   height: 12px;
-   background-color: white;
-   margin-right: 10px;
-   
+    border: 2px solid #d9232e;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    margin-left: -22px;
+    float: left;
+    margin-top: 3px;
+}
+
+.label-style {
+    padding: 0px 10px 10px 22px;
+    max-width: 700px;
+}
+
+textarea {
+    border: 1px solid #d9232e;
+    width: calc(40% + 22%);
+    height: 15vh;
+    display: none;
+    margin-left: -22px;
 }
 
 .radio-input {
     display: none;
 }
 
-.radio-input:checked+.radio-btn{
+.radio-input:checked + .radio-btn {
     background-color: #d9232e;
+
+}
+
+.radio-input:checked + .radio-btn + textarea {
+    display: block;
+    flex-direction: column;
+   
     
 }
 
-.radio-input:checked+.radio-btn+textarea
-
- {
-   display: inline-block;
-}
-
-.label-style {
-   display: flex;
-   padding: 10px 10px 10px 0px;  
-
+form {
+    margin-top: 10px;
 }
 
