@@ -26,17 +26,17 @@
             </section>
             <section id="icon">
                 <figure id="first-icon">
-                    <img src="img/newsletter.svg" class="icons" alt="">
+                    <img src="img/newsletter.svg" class="icons" alt="naewsletter">
                     <h1>Header One</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend efficitur elit, eget porttitor diam finibus ac.</p>
                 </figure>
                 <figure id="second-icon">
-                    <img src="img/mobile-phone.svg" class="icons" alt="">
+                    <img src="img/mobile-phone.svg" class="icons" alt="mobile-phone">
                     <h1>Header Two</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend efficitur elit, eget porttitor diam finibus ac.</p>
                 </figure>
                 <figure id="third-icon">
-                    <img src="img/investment.svg" class="icons" alt="">
+                    <img src="img/investment.svg" class="icons" alt="investment">
                     <h1>Header Three</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend efficitur elit, eget porttitor diam finibus ac.</p>
                 </figure>
@@ -57,21 +57,20 @@
         <section id="form-section" class="first">
             <p>Szkoda, że się rozstajemy. Mamy do Ciebie drobną prośbę.</p>
             <p>Twoja opinia jest bardzo cenna, żeby ulepszyć nasz produkt.<br>Dlatego prosimy o uzupełnienie tej <span class="bold">ankiety:</span></p>
-            <form action="form.php" method="post" id="formularz">
-                <div class="label-style"><input id="answer1" type="radio" name="answer" value="" class="radio-input">
-                    <div><label class="radio-btn" for="answer1" id=""></label>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem esse similique blanditiis recusandae quia, quo, facilis aliquam consequatur, nulla praesentium, eius sit. Ad, excepturi incidunt accusamus laboriosam ab quis eos asperiores, quae libero modi facere quasi aut.</div>
-                </div>
-                <div class="label-style"><input id="answer2" type="radio" name="answer" value="" class="radio-input">
-                    <div><label class="radio-btn" for="answer2" id=""></label>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend efficitur elit, eget porttitor diam finibus ac.</div>
-                </div>
-                <div class="label-style"><input id="answer3" type="radio" name="answer" value="" class="radio-input">
-                    <div><label class="radio-btn" for="answer3" id=""></label>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend efficitur elit, eget porttitor diam finibus ac.</div>
-                </div>
+            <form action="form.php" method="post">
+                <div class="label-style">
+                   <input id="answer1" type="radio" name="answer" value="" class="radio-input">
+                    <label class="radio-btn" for="answer1" id=""></label><span class="label-style-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem esse similique blanditiis recusandae quia, quo, facilis aliquam consequatur, nulla praesentium, eius sit. Ad, excepturi incidunt accusamus laboriosam ab quis eos asperiores, quae libero modi facere quasi aut.</span>
+                    </div>
+                <div class="label-style">
+                   <input id="answer2" type="radio" name="answer" value="" class="radio-input">
+                    <label class="radio-btn" for="answer2" id=""></label>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend efficitur elit, eget porttitor diam finibus ac.</div>
+                <div class="label-style">
+                  <input id="answer3" type="radio" name="answer" value="" class="radio-input">
+                   <label class="radio-btn" for="answer3" id=""></label>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend efficitur elit, eget porttitor diam finibus ac.</div>
                 <div class="label-style">
                     <input id="answer4" type="radio" name="answer" value="" class="radio-input">
-                    <div>
-                        <label class="radio-btn" for="answer4" id=""></label>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend efficitur elit, eget porttitor diam finibus ac.
-                    </div>
+                    <label class="radio-btn" for="answer4" id="" class="last-lebel"></label>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend efficitur elit, eget porttitor diam finibus ac.
                 </div>
                 <textarea maxlength="1000"></textarea>
                 <button id="send" class="button btn-red long-button">WYŚLIJ I WYPISZ MNIE Z NEWSLETTERA</button>

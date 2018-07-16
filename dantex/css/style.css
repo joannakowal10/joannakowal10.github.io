@@ -118,7 +118,6 @@ footer {
 #icon figure p {
     font-size: 0.9em;
 /*    margin-bottom: 20px;*/
-
 }
 
 /*section icon stop*/
@@ -147,12 +146,10 @@ footer {
     font-weight: 500;
     font-family: "Rajdhani";
     white-space: nowrap;
-
 }
 
 .long-button {
-    width: auto;
-    
+    width: auto;   
 }
 
 .btn-red {
@@ -189,32 +186,38 @@ footer {
 textarea {
     display: none;
 }
+
 .radio-btn {
-   display: inline-block;
-   border: 2px solid red;
-   width: 12px;
+   display: inline-flex;
+   border: 2px solid #d9232e;
+   min-width: 12px;
    height: 12px;
    background-color: white;
    margin-right: 10px;
    
 }
 
-.radio-input:checked+div>.radio-btn{
-    background-color: red;
+.radio-input:checked+.radio-btn{
+    background-color: #d9232e;
     
 }
 
 .radio-input {
     display: none;
 }
-.radio-input:checked+div+textarea
+
+/*.radio-input:checked+div+textarea*/
+/*.radio-input:checked+div>.radio-btn+textarea*/
+/*div>.radio-input:checked+div+textarea*/
  {
-   display: block;
-    
+   display: block;  
 }
 
 .label-style {
+   display: flex;
    padding: 10px 10px 10px 0px;  
 
 }
-
+#first-label {
+    width: 12px;
+}
