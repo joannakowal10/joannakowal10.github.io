@@ -1,7 +1,6 @@
 /*general style start*/
 
 * {
-
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -113,7 +112,6 @@ h2 {
 #form-section h1,
 #resignation h1 {
     color: #d9232e;
-/*    font-size: 1.8em;*/
     font-weight: 400;
 }
 
@@ -148,7 +146,6 @@ h2 {
 
 #icon figure p {
     font-size: 0.9em;
-    /*    margin-bottom: 20px;*/
 }
 
 /*section icon stop*/
@@ -231,6 +228,7 @@ textarea {
     height: 15vh;
     display: none;
     margin-left: -22px;
+    margin-top: 15px;
     padding: 10px;
 }
 
@@ -240,14 +238,11 @@ textarea {
 
 .radio-input:checked + .radio-btn {
     background-color: #d9232e;
-
 }
 
 .radio-input:checked + .radio-btn + textarea {
     display: block;
-    flex-direction: column;
-   
-    
+    flex-direction: column;  
 }
 
 form {

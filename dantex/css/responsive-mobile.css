@@ -55,6 +55,7 @@
     
     textarea {
         width: calc(100% + 22px);
+        max-width: 600px;
     }
     
 }
