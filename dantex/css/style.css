@@ -1,13 +1,18 @@
 /*general style start*/
 
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 body {
     width: 100%;
     height: 100vh;
     color: #231f20;
     font-family: "Rajdhani", sans-serif;
-    font-size: 1em;
+    font-size: 15px;
     margin: 0;
-
 
 }
 
@@ -16,16 +21,22 @@ footer {
     background-color: #fff;
 }
 
-#content {
-    background-color: #edebee;
-    background-image: url('../img/backgroun-newsletter.svg');
-    background-repeat: no-repeat;
-    background-position: 90% 40%;
-    min-height: 70vh;
-    max-width: 1850px;
-    margin: 0;
-    padding: 30px;
+#accept,
+#resignation,
+#form-section {
+    display: none;
+    float: left;
+    justify-content: center;
+}
 
+h1 {
+    font-size: 32px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 28px;
+    margin: 0 auto;
 }
 
 /*general style stop*/
@@ -35,10 +46,13 @@ footer {
 #main-header {
     height: 15vh;
     min-height: 60px;
-    max-width: 1850px;
     margin: 0 auto;
+    position: relative;
     display: flex;
     align-items: center;
+    justify-content: left;
+    max-width: 1200px;
+    padding: 0px 15px;
 
 }
 
@@ -49,41 +63,89 @@ footer {
 
 /*header stop*/
 
-/*main-info start*/
-
-#main-info p {
-    margin: 0px;
+#content {
+    background-image: url('../img/backgroun-newsletter.svg');
+    background-repeat: no-repeat;
+    background-position: 90% 40%;
+    min-height: 70vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    background-color: #edebee;
 }
 
-#main-info p:first-child {
+#content-inner {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 15px;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.first {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 15px;
+
+}
+.lead {
+    margin-bottom: 100px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+/*main-info start*/
+
+#main-info p,
+#accept p,
+#form-section p,
+#resignation p {
+    margin: 0 auto;
+}
+
+#main-info h1,
+#accept h1,
+#form-section h1,
+#resignation h1 {
     color: #d9232e;
-    font-size: 1.8em;
     font-weight: 400;
 }
 
 /*main-info stop*/
 
-/*section icon start*/
+/* icon start*/
+
+#icon {
+    width: 900px;
+    text-align: left;
+    font-size: 0;
+    margin: 0 -15px;
+}
 
 #icon figure {
     display: inline-block;
-    width: 20%;
-    margin: 0 7vh 5vh 0;
+    width: 33.33%;
+    margin: 0;
+    font-size: initial;
+    padding: 0 15px;
 }
 
 .icons {
-    height: 10vh;
+    height: 90px;
     margin: 5vh 0 2vh;
 }
 
-#icon figure h1 {
+#icon figure h2 {
     font-weight: 500;
 
 }
 
 #icon figure p {
     font-size: 0.9em;
-
 }
 
 /*section icon stop*/
@@ -102,27 +164,35 @@ footer {
 
 .button {
     border-radius: 8px;
-    padding: 10px 0;
     color: #fff;
-    width: 10vw;
+    width: 130px;
     border: 0px;
-    margin-bottom: 10em;
-    margin-right: 4vw;
+    margin-right: 20px;
+    margin-top: 20px;
     font-size: 1em;
+    padding: 5px 20px;
     font-weight: 500;
     font-family: "Rajdhani";
-
+    white-space: nowrap;
 }
 
-#btn-red {
+.long-button {
+    width: auto;
+}
+
+.btn-red {
     background-color: #d9232e;
 }
 
-#btn-green {
+.btn-green {
     background-color: #57a800;
 }
 
 /*section buttons stop*/
+
+.bold {
+    font-weight: 600;
+}
 
 /*footer start*/
 
@@ -137,6 +207,45 @@ footer {
 
 /*footer stop*/
 
-.remove {
+.radio-btn {
+    border: 2px solid #d9232e;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    margin-left: -22px;
+    float: left;
+    margin-top: 3px;
+}
+
+.label-style {
+    padding: 0px 10px 10px 22px;
+    max-width: 700px;
+}
+
+textarea {
+    border: 1px solid #d9232e;
+    width: calc(40% + 22px);
+    height: 15vh;
+    display: none;
+    margin-left: -22px;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.radio-input {
     display: none;
 }
+
+.radio-input:checked + .radio-btn {
+    background-color: #d9232e;
+}
+
+.radio-input:checked + .radio-btn + textarea {
+    display: block;
+    flex-direction: column;  
+}
+
+form {
+    margin-top: 10px;
+}
+

@@ -1,0 +1,131 @@
+@media (max-width:480px) {
+    body {
+        overflow: scroll;
+        text-align: center;
+    }
+    #main-header {
+        padding: 15px;
+        justify-content: center;
+    }
+    
+    #main-header img {
+        min-height: 20px;
+    }
+    
+    #content {
+        padding: 15px;
+        height: auto;
+        background-position: 190% 5%;
+    }
+
+    #content-inner #main-info p:first-child {
+        font-size: 1.4em;
+    }
+    #icon {
+        width: auto;
+        text-align: center;
+    }
+    
+    #icon figure {
+        width: 100%;
+        margin: 0;
+    }
+    
+    #buttons {
+        font-size: 0px;
+    }
+    .button {
+        width: 49%;
+        font-size: 16px;
+        margin: 0 auto;
+        padding: 5px 10px;
+        margin-top: 10px;
+    }
+    .button:first-child {
+        margin-right: 2%;
+    }
+    .long-button {
+        width: auto;
+    }
+    
+    #form-section {
+        text-align: left;
+        
+    }
+    
+    textarea {
+        width: calc(100% + 22px);
+        max-width: 600px;
+    }
+    br {
+        display: none;
+    }
+}
+
+@media (min-width:481px) and (max-width:760px) {
+   
+    body {
+        overflow: scroll;
+/*        text-align: center;*/
+    }
+    #main-header {
+        padding: 20px;
+        justify-content: center;
+    }
+    
+    #content {
+        padding: 25px;
+        height: auto;
+        background-position: 150% 10%;
+        text-align: center;
+        
+    }
+
+    #icon {
+        width: auto;
+        justify-content: center;
+        text-align: center;
+    }
+    #icon figure {
+        width: 30%;
+        margin-right: 10px;
+    }
+    
+    #icon figure:last-child {
+        margin: 0;
+    } 
+
+    #buttons {
+        font-size: 0px;
+    }
+    
+    .button {
+        width: 30%;
+        font-size: 14px;
+        margin: 0 auto;
+        padding: 7px;
+        margin-top: 10px;
+        
+    }
+    
+    .button:first-child {
+        margin-right: 4%;
+    }
+    .long-button {
+        width: auto;
+    }
+    #accept, #resignation {
+        float: none;
+    }
+    
+    #form-section {
+        text-align: left;
+        
+    }
+    textarea {
+        width: 80%;
+    }
+    br {
+        display: none;
+    }
+}

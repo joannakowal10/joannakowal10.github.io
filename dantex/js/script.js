@@ -1,15 +1,26 @@
-<<<<<<< HEAD
+'use strict';
 $(document).ready(function () {
-    'use strict';
-    $("#btn-red").click(function () {
-        $("#content").addClass("remove");
+    $("#btn-accept").click(function () {
+        $("#accept").show();
+        $("#content-inner").hide();
     });
+   $(".btn-return").click(function (){
+      $("#accept").hide();
+       $("#resignation").hide();
+       $("#form-section").hide();
+        $("#content-inner").show();
+   });
+    $("#btn-resignation").click(function () {
+        $("#form-section").show();
+        $("#content-inner").hide();
 });
-=======
-$(document).ready(function(){
-    $("#btn-red").click(function(){
-        $("#content").addClass("remove");
-    });
+     
+//        .click ();
+$("form").submit(function () {
+        $("#resignation").show();
+        $("#form-section").hide();
+    return false;
 });
-
->>>>>>> 9b6e6e22444d216a4336a84c8dfd18f664b096b8
+  
+    })
+//     
