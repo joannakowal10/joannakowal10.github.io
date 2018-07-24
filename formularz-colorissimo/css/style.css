@@ -1,0 +1,54 @@
+body {
+    background-color: #fff;
+}
+
+
+#main-conteiner {
+    padding: 100px;
+    max-width: 600px;
+    background-color: #f3f3f3;
+}
+
+form {
+    ;
+    margin: 0 auto;
+}
+
+#password-div {
+    position: relative;
+}
+
+#password-preview {
+    position: absolute;
+    background: url(../img/icons2.png);
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 18px;
+    top: 10px;
+   right: 10px;
+    opacity: .5;
+    
+}
+
+#password-preview:hover{
+    opacity: 1;
+}
+#check1, #check2, #check3 {
+    display: flex;
+    width: 100%;
+    margin-left: -15px;
+}
+
+#check1 label, #check2 label, #check3 label {
+   font-weight: 300;
+}
+input[type=checkbox].form-check-input {
+    margin-right: 15px;
+}
+
+#btn-reg, #btn-log {
+    background-color: #3d5383;
+    float: right;
+    color: white;
+    margin: 25px;
+}
