@@ -7,6 +7,7 @@ body {
     padding: 100px;
     max-width: 600px;
     background-color: #f3f3f3;
+    margin: 0 auto;
 }
 
 form {
