@@ -4,18 +4,28 @@ body {
 
 
 #main-conteiner {
+/*
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 70px;
+*/
     max-width: 450px;
     background-color: #fff;
     margin: 0 auto;
-
+    min-height: 0;
 }
 
-#main-conteiner 
+#main-conteiner:before {
+    min-height: 50px;
+    content: '';
+    display: block;
+    background-color: #f3f3f3
+}
+
+#logandreg, #remind {
+    padding: 50px;
+}
 
 form {
     margin: 0 auto;
