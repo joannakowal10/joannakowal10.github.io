@@ -1,18 +1,21 @@
 body {
     background-color: #f3f3f3;
-    
-
 }
 
 
 #main-conteiner {
-    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     padding: 70px;
     max-width: 450px;
     background-color: #fff;
     margin: 0 auto;
 
 }
+
+#main-conteiner 
 
 form {
     margin: 0 auto;
