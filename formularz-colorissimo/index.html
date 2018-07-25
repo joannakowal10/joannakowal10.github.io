@@ -15,8 +15,9 @@
 </head>
 
 <body>
-
+<div id="container">
     <div class="container" id="main-conteiner">
+<!--        <figure id="colorissimo-logo"><img src="img/csm_logo-colorissimo_a27d999076.png" alt="colorissimo-logo"></figure>-->
 
         <!-- Nav tabs -->
         <div id="logandreg">
@@ -28,7 +29,7 @@
             <!-- Tab panes -->
             <div class="tab-content">
                 <div role="tabpanel" class="tab-pane active" id="log">
-                    <form action="" class="form-horizontal">
+                    <form action="">
                         <div class="form-group">
                             <label for="user" class="sr-only"></label>
                             <input class="form-control" type="text" id="user" placeholder="ID użytkownika">
@@ -41,12 +42,12 @@
                                 <input class="form-control" type="password" id="password" placeholder="Hasło">
                             </div>
                         </div>
-                        <div class="form-check" id="check3">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
-                            <label class="form-check-label" for="defaultCheck3">
-                        Zapamiętaj mnie
-                        </label>
+                        <div class="checkbox">
+                            <label>
+      <input type="checkbox"> Zapamietaj mnie
+    </label>
                         </div>
+
                         <div class="form-group">
                             <button type="submit" class="btn" id="btn-log">ZALOGUJ SIĘ</button>
                         </div>
@@ -57,7 +58,7 @@
 
                 </div>
                 <div role="tabpanel" class="tab-pane" id="register">
-                    <form action="" class="form-horizontal">
+                    <form action="">
                         <h2>Informacje o firmie</h2>
                         <div class="form-group">
                             <label for="companyName" class="sr-only"></label>
@@ -142,17 +143,17 @@
             </div>
         </div>
         <div id="remind">
-            <form action="" class="form-horizontal">
-                        <h2>Nie pamiętasz hasła?</h2>
-                        <div class="form-group">
-                            <label for="emailName" class="sr-only"></label>
-                            <input class="form-control" type="email" id="emailName" placeholder="E-mail">
-                        </div>
-                        <div class="form-group">
-                            <label for="codeName" class="sr-only"></label>
-                            <input class="form-control" type="text" id="codeName" placeholder="Wpisz kod">
-                        </div>
-<!--
+            <form action="">
+                <h2>Nie pamiętasz hasła?</h2>
+                <div class="form-group">
+                    <label for="emailName" class="sr-only"></label>
+                    <input class="form-control" type="email" id="emailName" placeholder="E-mail">
+                </div>
+                <div class="form-group">
+                    <label for="codeName" class="sr-only"></label>
+                    <input class="form-control" type="text" id="codeName" placeholder="Wpisz kod">
+                </div>
+                <!--
                         <div class="form-group">
                             <label for="" class="sr-only"></label>
                             <span id="captcha-img"><img alt="" src="/captcha/e6355aaa999501621a35340d0587abcd.png"></span>
@@ -160,6 +161,7 @@
 -->
             </form>
         </div>
+    </div>
     </div>
 
     <!-- Default form login -->
