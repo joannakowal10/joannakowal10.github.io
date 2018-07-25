@@ -13,6 +13,9 @@ body {
 form {
     margin: 0 auto;
 }
+h2 {
+    margin-left: -15px;
+}
 
 #password-div {
     position: relative;
