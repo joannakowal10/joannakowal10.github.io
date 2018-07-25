@@ -4,4 +4,10 @@ $(function (){
   $(this).tab('show')
 });
     
+    $('#btn-remind').click(function (){
+        $('#remind').show();
+        $('#logandreg').hide();
+//        return false;
+    });
+    
 });

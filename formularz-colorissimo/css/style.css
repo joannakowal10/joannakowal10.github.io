@@ -10,7 +10,6 @@ body {
 }
 
 form {
-    ;
     margin: 0 auto;
 }
 
@@ -33,6 +32,7 @@ form {
 #password-preview:hover{
     opacity: 1;
 }
+
 #check1, #check2, #check3 {
     display: flex;
     width: 100%;
@@ -42,13 +42,28 @@ form {
 #check1 label, #check2 label, #check3 label {
    font-weight: 300;
 }
+
 input[type=checkbox].form-check-input {
     margin-right: 15px;
 }
 
-#btn-reg, #btn-log {
+#btn-reg, #btn-log, #btn-remind {
     background-color: #3d5383;
     float: right;
     color: white;
-    margin: 25px;
+    margin-top: 15px;
+}
+
+
+#log #user {
+    margin-top: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#remind {
+    display: none;
 }
