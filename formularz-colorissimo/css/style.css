@@ -6,6 +6,10 @@ body {
 .container {
      max-width: 450px;
 }
+
+h2 {
+    margin-top: 0px;
+}
 #container {
     display: flex;
     min-height: 100vh;
@@ -15,23 +19,28 @@ body {
 }
 
 #main-container {
-
     display: block;
-    background-color: #f3f3f3;
     margin: 0 auto;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center; 
 }
 
+#logandreg, #remind {
+    background-color: #f3f3f3;
+    margin: 30px 0;
+}
 
-colorissimo-logo
+#colorissimo-logo {
+   height: 70px;
+   margin: 0 auto;
+   display: block;
+    
+}
 
 form {
     margin: 0 auto;
     padding: 30px;
 }
-
 
 #password-div {
     position: relative;
@@ -66,25 +75,27 @@ form {
     font-weight: 300;
 }
 
-input[type=checkbox].form-check-input {
+input[type=checkbox] {
     margin-right: 15px;
 }
 
 #btn-reg,
 #btn-log {
     background-color: #3d5383;
-    float: right;
-    color: white;
+    color: #fff;
+    margin: 0px auto;
+    display: block;
+}
+
+#btn-reg {
     margin-top: 15px;
 }
 
-
-#log #user {
-    margin-top: 20px;
-}
-
-ul {
-    margin: 0px -15px;
+a {
+    text-align: center;
+    display: block;
+    margin: 15px 0;
+    text-decoration: none;
 }
 
 ul li {
@@ -92,13 +103,10 @@ ul li {
 }
 
 ul li a {
-    text-decoration: none;
-    font-size: 12px;
-    text-align: center;
-    padding: 10px;
+    margin: 0;
 }
 
-
+ 
 #remind {
     display: none;
 }
