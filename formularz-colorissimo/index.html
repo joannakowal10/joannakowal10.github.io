@@ -9,159 +9,153 @@
     <!-- Bootstrap CSS -->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!--   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">-->
-
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-<div id="container">
-    
- <div class="container" id="main-container">
-     
-<figure><img id="colorissimo-logo" src="img/csm_logo-colorissimo_a27d999076.png" alt="colorissimo-logo"></figure>
-        
-        <div id="logandreg">
-            <ul class="nav nav-tabs my-tab" role="tablist" id="myTabs">
-                <li role="presentation" class="active text-uppercase"><a href="#log" aria-controls="log" role="tab" data-toggle="tab">Zaloguj się</a></li>
-                <li role="presentation" class="text-uppercase"><a href="#register" aria-controls="register" role="tab" data-toggle="tab">Zarejestruj&nbsp;się</a></li>
-            </ul>
+    <div id="container">
 
-            <!-- Tab panes -->
-            <div class="tab-content">
-                <div role="tabpanel" class="tab-pane active" id="log">
-                    <form action="">
-                        <div class="form-group">
-                            <label for="user" class="sr-only"></label>
-                            <input class="form-control" type="text" id="user" placeholder="ID użytkownika">
-                        </div>
-                        <div class="form-group">
-                            <label for="password" class="sr-only">
-                    </label>
-                            <div id="password-div">
-                                <span id="password-preview"></span>
-                                <input class="form-control" type="password" id="password" placeholder="Hasło">
+        <div class="container" id="main-container">
+
+            <figure><img id="colorissimo-logo" src="img/csm_logo-colorissimo_a27d999076.png" alt="colorissimo-logo"></figure>
+
+            <div id="logandreg">
+                <ul class="nav nav-tabs my-tab" role="tablist" id="myTabs">
+                    <li role="presentation" class="active text-uppercase"><a href="#log" aria-controls="log" role="tab" data-toggle="tab">Zaloguj się</a></li>
+                    <li role="presentation" class="text-uppercase"><a href="#register" aria-controls="register" role="tab" data-toggle="tab">Zarejestruj&nbsp;się</a></li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="log">
+                        <form action="">
+                            <div class="form-group">
+                                <label for="user" class="sr-only"></label>
+                                <input class="form-control" type="text" id="user" placeholder="ID użytkownika">
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="checkbox">
-                                <label>
-                                  <input type="checkbox"> Zapamietaj mnie
+                            <div class="form-group">
+                                <label for="password" class="sr-only">
+                    </label>
+                                <div id="password-div">
+                                    <span id="password-preview"></span>
+                                    <input class="form-control" type="password" id="password" placeholder="Hasło">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="checkbox">
+                                    <label>
+                                  <input type="checkbox"> Zapamiętaj mnie
                                 </label>
+                                </div>
                             </div>
-                        </div>
-                        <button type="submit" class="btn btn-default" id="btn-log">ZALOGUJ SIĘ</button>
+                            <button type="submit" class="btn btn-default" id="btn-log">ZALOGUJ SIĘ</button>
                             <a id="link-remind" href="#remind">Nie pamiętasz hasła?</a>
-                    </form>
+                        </form>
 
-                </div>
-                <div role="tabpanel" class="tab-pane" id="register">
-                    <form action="">
-                        <h2>Informacje o firmie</h2>
-                        <div class="form-group">
-                            <label for="companyName" class="sr-only"></label>
-                            <input class="form-control" type="text" id="companyName" placeholder="Nazwa firmy">
-                        </div>
-                        <div class="form-group">
-                            <label for="street" class="sr-only"></label>
-                            <input class="form-control" type="text" id="street" placeholder="Ulica">
-                        </div>
-                        <div class="form-group">
-                            <label for="city" class="sr-only"></label>
-                            <input class="form-control" type="text" id="city" placeholder="Miasto">
-                        </div>
-                        <div class="form-group">
-                            <label for="zip" class="sr-only"></label>
-                            <input class="form-control" type="number" id="zip" placeholder="Kod pocztowy">
-                        </div>
-                        <div class="form-group">
-                            <label for="email" class="sr-only"></label>
-                            <input class="form-control" type="email" id="email" placeholder="E-mail">
-                        </div>
-                        <div class="form-group">
-                            <label for="phone" class="sr-only"></label>
-                            <input class="form-control" type="tel" id="phone" placeholder="Telefon">
-                        </div>
-                        <div class="form-group">
-                            <label for="mobile" class="sr-only"></label>
-                            <input class="form-control" type="tel" id="mobile" placeholder="Telefon kom.">
-                        </div>
-                        <div class="form-group">
-                            <label for="fax" class="sr-only"></label>
-                            <input class="form-control" type="text" id="fax" placeholder="Fax">
-                        </div>
-                        <div class="form-group">
-                            <label for="website" class="sr-only"></label>
-                            <input class="form-control" type="url" id="website" placeholder="Strona internetowa">
-                        </div>
-                        <h2>Dane osobowe</h2>
-                        <div class="form-group">
-                            <label for="name" class="sr-only"></label>
-                            <input class="form-control" type="text" id="name" placeholder="Imię">
-                        </div>
-                        <div class="form-group">
-                            <label for="surname" class="sr-only"></label>
-                            <input class="form-control" type="text" id="surname" placeholder="Nazwisko">
-                        </div>
-                        <div class="form-group">
-                            <label for="yourEmail" class="sr-only"></label>
-                            <input class="form-control" type="email" id="yourEmail" placeholder="Twój e-mail">
-                        </div>
-                        <div class="form-group">
-                            <label for="yourEmail" class="sr-only"></label>
-                            <input class="form-control" type="text" id="position" placeholder="Stanowisko">
-                        </div>
-                        <h2>Hasło</h2>
-                        <div class="form-group">
-                            <label for="password" class="sr-only">
-                    </label>
-                            <div id="password-div">
-                                <span id="password-preview"></span>
-                                <input class="form-control" type="password" id="password" placeholder="Hasło">
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="register">
+                        <form action="">
+                            <h2>Informacje o firmie</h2>
+                            <div class="form-group">
+                                <label for="companyName" class="sr-only"></label>
+                                <input class="form-control" type="text" id="companyName" placeholder="Nazwa firmy">
                             </div>
-                        </div>
-                        <div class="form-check" id="check1">
+                            <div class="form-group">
+                                <label for="street" class="sr-only"></label>
+                                <input class="form-control" type="text" id="street" placeholder="Ulica">
+                            </div>
+                            <div class="form-group">
+                                <label for="city" class="sr-only"></label>
+                                <input class="form-control" type="text" id="city" placeholder="Miasto">
+                            </div>
+                            <div class="form-group">
+                                <label for="zip" class="sr-only"></label>
+                                <input class="form-control" type="number" id="zip" placeholder="Kod pocztowy">
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="sr-only"></label>
+                                <input class="form-control" type="email" id="email" placeholder="E-mail">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" class="sr-only"></label>
+                                <input class="form-control" type="tel" id="phone" placeholder="Telefon">
+                            </div>
+                            <div class="form-group">
+                                <label for="mobile" class="sr-only"></label>
+                                <input class="form-control" type="tel" id="mobile" placeholder="Telefon kom.">
+                            </div>
+                            <div class="form-group">
+                                <label for="fax" class="sr-only"></label>
+                                <input class="form-control" type="text" id="fax" placeholder="Fax">
+                            </div>
+                            <div class="form-group">
+                                <label for="website" class="sr-only"></label>
+                                <input class="form-control" type="url" id="website" placeholder="Strona internetowa">
+                            </div>
+                            <h2>Dane osobowe</h2>
+                            <div class="form-group">
+                                <label for="name" class="sr-only"></label>
+                                <input class="form-control" type="text" id="name" placeholder="Imię">
+                            </div>
+                            <div class="form-group">
+                                <label for="surname" class="sr-only"></label>
+                                <input class="form-control" type="text" id="surname" placeholder="Nazwisko">
+                            </div>
+                            <div class="form-group">
+                                <label for="yourEmail" class="sr-only"></label>
+                                <input class="form-control" type="email" id="yourEmail" placeholder="Twój e-mail">
+                            </div>
+                            <div class="form-group">
+                                <label for="yourEmail" class="sr-only"></label>
+                                <input class="form-control" type="text" id="position" placeholder="Stanowisko">
+                            </div>
+                            <h2>Hasło</h2>
+                            <div class="form-group">
+                                <label for="password" class="sr-only">
+                    </label>
+                                <div id="password-div">
+                                    <span id="password-preview"></span>
+                                    <input class="form-control" type="password" id="password" placeholder="Hasło">
+                                </div>
+                            </div>
+                            <div class="checkbox" id="check1">
+                                <label for="defaultCheck2">
                             <input type="checkbox" value="" id="defaultCheck1">
-                            <label for="defaultCheck2">
                         Wyrażam zgodę na przetwarzanie moich danych osobowych przekazanych w formularzu rejestracyjnym w celu świadczenia usług za pośrednictwem Serwisu.
                         </label>
-                        </div>
-                        <div class="form-check" id="check2">
+                            </div>
+                            <div class="checkbox" id="check2">
+                                <label for="defaultCheck2">
                             <input type="checkbox" value="" id="defaultCheck2">
-                            <label for="defaultCheck2">
                         Wyrażam zgodę na przetwarzanie moich danych osobowych przekazanych w formularzu rejestracyjnym w celu świadczenia usług za pośrednictwem Serwisu.
                         </label>
-                        </div>
+                            </div>
                             <button type="submit" class="btn btn-default" id="btn-reg">ZAREJESTRUJ SIĘ</button>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div id="remind">
-            <form action="">
-                <h2>Nie pamiętasz hasła?</h2>
-                <div class="form-group">
-                    <label for="emailName" class="sr-only"></label>
-                    <input class="form-control" type="email" id="emailName" placeholder="E-mail">
-                </div>
-                <div class="form-group">
-                    <label for="codeName" class="sr-only"></label>
-                    <input class="form-control" type="text" id="codeName" placeholder="Wpisz kod">
-                </div>
-                <!--
+            <div id="remind">
+                <form action="">
+                    <h2>Nie pamiętasz hasła?</h2>
+                    <div class="form-group">
+                        <label for="emailName" class="sr-only"></label>
+                        <input class="form-control" type="email" id="emailName" placeholder="E-mail">
+                    </div>
+                    <div class="form-group">
+                        <label for="codeName" class="sr-only"></label>
+                        <input class="form-control" type="text" id="codeName" placeholder="Wpisz kod">
+                    </div>
+                    <!--
                         <div class="form-group">
                             <label for="" class="sr-only"></label>
                             <span id="captcha-img"><img alt="" src="/captcha/e6355aaa999501621a35340d0587abcd.png"></span>
                         </div>
 -->
-            </form>
+                </form>
+            </div>
         </div>
     </div>
-    </div>
-
-    <!-- Default form login -->
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

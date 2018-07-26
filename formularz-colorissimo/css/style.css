@@ -68,21 +68,6 @@ form {
     opacity: 1;
 }
 
-#check1,
-#check2,
-#check3 {
-    display: flex;
-   
-}
-
-/*
-#check1:checked,
-#check2:checked,
-#check3:checked {
-    background-color: #509af5;
-    
-}
-*/
 
 #check1 label,
 #check2 label,
@@ -90,13 +75,8 @@ form {
     font-weight: 300;
 }
 
-input[type=checkbox] {
-    margin-right: 15px;
-}
 
-
-#btn-reg,
-#btn-log {
+#btn-reg, #btn-log {
     background-color: #3d5383;
     color: #fff;
     margin: 0px auto;
