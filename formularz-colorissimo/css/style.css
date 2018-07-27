@@ -11,73 +11,46 @@ body {
 }
 
 .container {
-     max-width: 450px;
+    max-width: 450px;
     width: 100%;
+    
 }
 
 h2 {
     margin-top: 0px;
 }
-/*
-#container {
-    display: flex;
-    min-height: 100vh;
-    position: relative;
-    align-items: center;
-    padding: 30px 0px;
-}
-*/
 
-#main-container {
+
+#auth-container {
     display: block;
-    margin: 0 auto;
     align-items: center;
     justify-content: center; 
-    
-}
-
-#logandreg, #remind {
-    background-color: #fff;
-    margin: 30px 0;
-    border-radius: 5px;
--webkit-box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.07);
--moz-box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.07);
-box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.07);
+    margin: 30px 0; 
 }
 
 
 #logo {
    height: 80px;
    margin: 0 auto;
-   display: block;
-    
+   display: block; 
 }
 
 form {
     margin: 0 auto;
     padding: 30px;
+    background-color: #fff;
+    border-bottom-left-radius: 5px;
+     border-bottom-right-radius: 5px;
+}
+a {
+    text-align: center;
+    display: block;
+    text-decoration: none;
 }
 
-#password-div {
-    position: relative;
+#auth-container input {
+    box-shadow: none;
 }
-
-#password-preview {
-    position: absolute;
-    background: url(../img/icons2.png);
-    background-repeat: no-repeat;
-    width: 30px;
-    height: 18px;
-    top: 10px;
-    right: 10px;
-    opacity: .5;
-
-}
-
-#password-preview:hover {
-    opacity: 1;
-}
-
 
 #check1 label,
 #check2 label,
@@ -102,88 +75,78 @@ form {
 #link-remind {
     font-size: 12px;
     color: #457db9;
-    text-align: center
-/*    display: inline-block;*/
-
-}
-
-ul li {
-    width: 33%;
-}
-ul>li:last-child {
-    display: none;
 }
 
 
 ul {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    margin-top: 30px;
+    background-color: #519c96;
+    color: #fff;
+    border: 0;
+ 
     
 }
 
-ul>li:first-of-type a {
+#auth-container>ul>li {
+    width: 50%;
+}
+
+
+
+#auth-container>ul>li:first-of-type a {
      border-top-right-radius: 0;
 }
 
-ul>li:last-of-type a {
+#auth-container>ul>li:nth-of-type(2) a {
      border-top-left-radius: 0;
 }
 
-a {
-    text-align: center;
-    display: block;
-    text-decoration: none;
-}
 
-.my-tab>li>a {
+li>a {
     padding: 15px 0;
 }
 
-.my-tab li {
-    margin-bottom: -2px;
-    
-}
-.my-tab>li:hover {
+
+li:hover {
     background-color: #d8d8d8;
 }
 
-.my-tab li a {
+li a {
     margin: 0;
     color: white;
     background-color: transparent;
 }
 
-.my-tab {
-    background-color: #519c96;
+li>a:hover {
     color: #fff;
-    border: 0;
+}
+
+.nav-tabs>li>a {
+    margin-right: 0;
 }
 
 
-.my-tab>li.active>a {
-    border: 0;
-}
-
-.my-tab>li.active>a:active {
-    border: 0;   
-}
-
-.my-tab>li.active>a:hover {
-    border: 0;
-}
-.my-tab>li.active>a:focus {
-    border: 0;
-}
 
 .nav>li>a:focus, .nav>li>a:hover {
     background-color: transparent;
 }
-.my-tab>li:hover {
+
+li:hover {
     background-color: transparent;
 }
 
-#remind {
-    display: none;
+
+.nav-tabs>li>a:hover {
+    border: 0;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    border: 0;
 }
 
 
+.nav-tabs>li {
+    margin-bottom: -3px;
+}

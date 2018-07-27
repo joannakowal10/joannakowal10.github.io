@@ -1,23 +1,10 @@
 $(function (){
-    $('#myTabs a').click(function (e) {
-  e.preventDefault()
-  $(this).tab('show')
-});
+    $("#link-remind").click(function() {                $("#remind-panel a").click();
+    });
     
-    $('#link-remind').click(function (){
-        $('#remind').show();
-        $('#remind-panel').show();
-          $('#log').hide();
-         $('#reg').hide();
-      
+     $("#link-return").click(function() {               
+    $("#log-panel a").click();
+    });
+});
 
-//        return false;
-    });
-    
-     $('#link-return').click(function (){
-        $('#remind').hide();
-        $('#remind-panel').hide();
-          $('#log').show();
-         $('#reg').show();
-});
-    });
+//onclick='$("#remind-panel a").click()'
