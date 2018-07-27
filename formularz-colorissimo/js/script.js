@@ -4,10 +4,20 @@ $(function (){
   $(this).tab('show')
 });
     
-    $('#btn-remind').click(function (){
+    $('#link-remind').click(function (){
         $('#remind').show();
-        $('#logandreg').hide();
+        $('#remind-panel').show();
+          $('#log').hide();
+         $('#reg').hide();
+      
+
 //        return false;
     });
     
+     $('#link-return').click(function (){
+        $('#remind').hide();
+        $('#remind-panel').hide();
+          $('#log').show();
+         $('#reg').show();
 });
+    });
