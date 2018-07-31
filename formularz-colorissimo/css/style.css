@@ -42,11 +42,6 @@ body {
     text-decoration: none;
 }
 
-#auth-container input {
-    box-shadow: none;
-    border-radius: 4px;
-}
-
 
 #btn-reg, #btn-log {
     background-color: #3d5383;
@@ -60,14 +55,14 @@ body {
     margin-top: 15px;
 }
 
-#link-remind, #auth-container .btn-link {
+#auth-container .btn-link {
     font-size: 14px;
     color: #a7a7a7;
 }
 
 
 #auth-container .form-control {
-    border-radius: 3px;
+/*    border-radius: 3px;*/
     box-shadow: none;
 }
 
