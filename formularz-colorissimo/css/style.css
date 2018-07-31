@@ -50,17 +50,17 @@ body {
     margin: 0px auto;
     display: block;
     border-radius: 0px;
-    font-size: 16px;
 }
 
 #btn-reg {
     margin-top: 15px;
 }
 
-#link-remind {
-    font-size: 12px;
-    color: #457db9;
+#link-remind, #auth-container .btn-link {
+    font-size: 14px;
+    color: #a7a7a7;
 }
+
 
 #auth-container .form-control {
     border-radius: 0;
@@ -81,7 +81,8 @@ body {
 
 #auth-container .nav-tabs>li>a {
     margin-right: 0px;
-    padding: 15px 0;
+    padding: 20px 0;
+    font-size: 18px;
 }
 
 #auth-container .nav-tabs>li.active>a {
