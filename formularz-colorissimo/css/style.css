@@ -16,7 +16,7 @@ body {
     
 }
 
-h2 {
+#auth-container h2 {
     margin-top: 0px;
 }
 
@@ -34,22 +34,21 @@ h2 {
    margin: 0 auto;
    display: block; 
 }
-
-form {
+#auth-container form {
     margin: 0 auto;
     padding: 30px;
     background-color: #fff;
     border-bottom-left-radius: 5px;
      border-bottom-right-radius: 5px;
 }
-a {
+ #auth-container a {
     text-align: center;
     display: block;
     text-decoration: none;
 }
 
 #auth-container input {
-    box-shadow: none;
+    box-shadow: none;``
 }
 
 #check1 label,
@@ -77,76 +76,49 @@ a {
     color: #457db9;
 }
 
+#auth-container .form-control {
+    border-radius: 0;
+    box-shadow: none;
+}
 
-ul {
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+#auth-container .nav-tabs {
     margin-top: 30px;
     background-color: #519c96;
-    color: #fff;
-    border: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 1px solid transparent;
+}
+#auth-container .nav-tabs>li {
+    width: 50%
+}
+
+#auth-container .nav-tabs>li>a {
+    margin-right: 0px;
+}
+
+#auth-container .nav-tabs>li.active>a {
+    border: 1px solid transparent;
+    background-color: #fff;
+}
+
+#auth-container .nav-tabs>li>a:hover {
+    border-color: transparent;
+}
+
+#auth-container .nav-tabs>li:first-of-type a {
+    border-top-right-radius: 0;
+}
  
-    
+#auth-container .nav-tabs>li:nth-of-type(2) a{
+    border-top-left-radius: 0;
+}
+ 
+
+#auth-container .nav>li:not(.active)>a:focus, #auth-container .nav>li:not(.active)>a:hover {
+    background-color: #519c96;
+
 }
 
-#auth-container>ul>li {
-    width: 50%;
-}
-
-
-
-#auth-container>ul>li:first-of-type a {
-     border-top-right-radius: 0;
-}
-
-#auth-container>ul>li:nth-of-type(2) a {
-     border-top-left-radius: 0;
-}
-
-
-li>a {
-    padding: 15px 0;
-}
-
-
-li:hover {
-    background-color: #d8d8d8;
-}
-
-li a {
-    margin: 0;
-    color: white;
-    background-color: transparent;
-}
-
-li>a:hover {
+#auth-container .nav>li:not(.active)>a {
     color: #fff;
-}
-
-.nav-tabs>li>a {
-    margin-right: 0;
-}
-
-
-
-.nav>li>a:focus, .nav>li>a:hover {
-    background-color: transparent;
-}
-
-li:hover {
-    background-color: transparent;
-}
-
-
-.nav-tabs>li>a:hover {
-    border: 0;
-}
-
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
-    border: 0;
-}
-
-
-.nav-tabs>li {
-    margin-bottom: -3px;
 }
