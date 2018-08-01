@@ -2,6 +2,7 @@
     body {
         overflow: scroll;
         text-align: center;
+        background-image: none;
     }
     #main-header {
         padding: 15px;
@@ -23,6 +24,7 @@
     }
     #icon {
         width: auto;
+        flex-direction: column;
         text-align: center;
     }
     
@@ -81,23 +83,33 @@
         
     }
 
+    
+    
     #icon {
         width: auto;
         justify-content: center;
         text-align: center;
+        flex-wrap: wrap;
     }
     #icon figure {
         width: 30%;
         margin-right: 10px;
+        width: calc(100%/3);
+        min-width: 230px;
     }
     
-    #icon figure:last-child {
+    #icon figure:last-of-type {
         margin: 0;
+        /* width: 100%; */
     } 
 
+    #icon figure h2 {
+        /* min-height: 100px; */
+    }
     #buttons {
         font-size: 0px;
     }
+    
     
     .button {
         width: 30%;
