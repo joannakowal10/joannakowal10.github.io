@@ -8,12 +8,10 @@ body {
 
 }
 
-
 #auth-container {
     max-width: 450px;
     width: 100%;
     padding: 60px 0;
-
 }
 
 #auth-container h2 {
@@ -43,26 +41,7 @@ body {
 }
 
 
-#btn-reg, #btn-log {
-    background-color: #3d5383;
-    color: #fff;
-    margin: 0px auto;
-    display: block;
-    border-radius: 0px;
-}
-
-#btn-reg {
-    margin-top: 15px;
-}
-
-#auth-container .btn-link {
-    font-size: 14px;
-    color: #a7a7a7;
-}
-
-
 #auth-container .form-control {
-
     box-shadow: none;
 }
 
@@ -114,4 +93,13 @@ body {
 #auth-container .btn-default {
     border-color: transparent;
     border-radius: 4px;
+    background-color: #3d5383;
+    color: #fff;
+    margin: 0px auto;
+    
+}
+
+#auth-container .btn-link {
+    font-size: 14px;
+    color: #a7a7a7;
 }
