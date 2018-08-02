@@ -28,7 +28,7 @@
         <!-- Tab panes -->
         <div class="tab-content">
             <div role="tabpanel" class="tab-pane active" id="log">
-                <form action="">
+                <form id="log-form" action="">
                     <div class="form-group">
                         <label for="user" class="sr-only"></label>
                         <input class="form-control input-lg" type="text" id="user" placeholder="ID użytkownika">
@@ -46,7 +46,13 @@
                             </label>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-default btn-lg btn-block" id="btn-log">ZALOGUJ SIĘ</button>
+                    <button type="submit" class="btn btn-default btn-lg btn-block" id="btn-log">
+                        <span>ZALOGUJ SIĘ</span>
+                        <div class="sk-double-bounce">
+                            <div class="sk-child sk-double-bounce1"></div>
+                            <div class="sk-child sk-double-bounce2"></div>
+                        </div>
+                    </button>
                     <button type="button" class="btn btn-link btn-block" id="link-remind" >Nie pamiętasz hasła?</button>
                 </form>
             </div>
