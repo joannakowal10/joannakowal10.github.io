@@ -160,3 +160,13 @@ body {
 .btn-default[disabled]>span+div.spinner {
    display: flex;
         }
+
+#auth-container .alert-danger {
+   display: none;
+   margin-top: 15px;
+
+}
+
+#auth-container .alert-danger.visible {
+   display: block;
+}

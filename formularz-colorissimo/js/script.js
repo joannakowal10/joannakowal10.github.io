@@ -20,7 +20,7 @@ $(function () {
         $.post('https://colorissimo.com/default/login/process', {
             referrer: '/',
             login: $('#user').val(),
-            pass: $('log-password').val(),
+            pass: $('#log-password').val(),
             remember_me: 0
         }, function (response) {
 
@@ -28,7 +28,8 @@ $(function () {
                 window.location = response.redirect;
             } else {
                 unblockButton();
-                $('.message').text("Error");
+                $('.alert').alert()
+               $('#auth-container .alert-danger').addClass("visible");
             }
         });
 
