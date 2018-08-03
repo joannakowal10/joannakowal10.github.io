@@ -10,13 +10,13 @@ $(function () {
     function showText() {
         $('#btn-log span').removeClass("hide-text");
         $('#btn-log').prop("disabled", false);
-        $('.sk-double-bounce').hide();
+        $('.spinner').hide();
     };
 
     $("#log-form").submit(function (event) {
 
         $('#btn-log span').addClass("hide-text");
-        $('.sk-double-bounce').show();
+        $('.spinner').show();
         $('#btn-log').prop('disabled', true);
         setTimeout(showText, 4000);
 
