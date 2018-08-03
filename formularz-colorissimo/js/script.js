@@ -24,6 +24,20 @@ $(function () {
        
         $buttonClick.attr("disabled", true);
          setTimeout(unblockButton, 4000);
+//        jQuery.post('https://colorissimo.com/default/login/process', {
+//referrer: '/', 
+//   login: 'kamil@goodcode.pl', //zastapic danymi z inputa
+//   pass: 'h77912', // zastapic danymi z inputa
+//   remember_me: 0
+//}, function(response) {
+//if(data.status == 1 && data.redirect != undefined) {
+//       console.log('zalogowano');
+//   } else {
+//       console.log('blad.');
+//       console.log('odblokuj przycisk.');
+//       console.log('wyswietl komunikat bledu.');
+//   }
+//})
 
         return false
 
