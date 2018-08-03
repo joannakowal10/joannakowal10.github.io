@@ -7,20 +7,17 @@ $(function () {
         $("#log-panel a").click();
     });
 
-
     function unblockButton() {
-
         $('.btn-default').prop("disabled", false);
     };
 
     $("#log-form").submit(function (event) {
 
-
         var $buttonClick = $(this).find('button');
 
         $buttonClick.attr("disabled", true);
-        setTimeout(unblockButton, 4000);
-        jQuery.post('https://colorissimo.com/default/login/process', {
+
+        $.post('https://colorissimo.com/default/login/process', {
             referrer: '/',
             login: $('#user').val(),
             pass: $('log-password').val(),
@@ -31,7 +28,7 @@ $(function () {
                 window.location = response.redirect;
             } else {
                 unblockButton();
-$('.message').innerHTML("Error");
+                $('.message').text("Error");
             }
         });
 
