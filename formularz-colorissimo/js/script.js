@@ -13,7 +13,7 @@ $(function () {
 
     $("#log-form").submit(function (event) {
 
-        var $buttonClick = $(this).find('button');
+        var $buttonClick = $(this).find('button').first();
 
         $buttonClick.attr("disabled", true);
 
