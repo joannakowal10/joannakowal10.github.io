@@ -101,9 +101,11 @@ body {
     color: #a7a7a7;
 }
 
+/*
 .hide-text {
     opacity: 0;
 }
+*/
 
 
 .spinner {
@@ -112,7 +114,7 @@ body {
   height: 30px;
   position: absolute;
   top: 50%;
-   transform: translateY(-50%);
+    transform: translateY(-50%);
   left: calc(50% - 16px);
 /*  margin: 100px auto;*/
 }
@@ -150,3 +152,11 @@ body {
     -webkit-transform: scale(1.0);
   }
 }
+
+.btn-default[disabled] span {
+    opacity: 0
+}
+
+.btn-default[disabled]>span+div.spinner {
+   display: flex;
+        }
