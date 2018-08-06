@@ -29,19 +29,36 @@ $(function () {
             } else {
                 unblockButton();
                 $('.alert').alert()
-               $('#auth-container .alert-danger').addClass("visible");
+                $('#auth-container .alert-danger').addClass("visible");
             }
         });
-        
+
+//        return false
+
+    });
+
+
+    $().ready(function () {
+
         $("#reg-form").validate({
             rules: {
-                companyName: "required"
+                companyName: {
+                    required: true,
+                    minlength: 3
+                },
+                street: {
+                    required: true},
+                email: {
+                    required: true,
+                    email: true,
+                },
             },
-            messages: "Proszę podać nazwę firmy"
-                
+            messages: {
+                companyName: {
+                    require: "Proszę podać nazwę firmy",
+                },
+            }
+
         });
-
-        return false
-
     });
 });
