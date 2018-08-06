@@ -29,7 +29,7 @@
         <!-- Tab panes -->
         <div class="tab-content">
             <div role="tabpanel" class="tab-pane active" id="log">
-                <form id="log-form" action="">
+                <form id="log-form" action="https://colorissimo.com/default/login/process">
                     <div class="form-group">
                         <label for="user" class="sr-only"></label>
                         <input class="form-control input-lg" type="text" id="user" placeholder="ID użytkownika">
@@ -65,27 +65,27 @@
                 </div>
             </div>
             <div role="tabpanel" class="tab-pane" id="register">
-                <form action="">
+                <form id="reg-form" action="">
                     <h2>Informacje o firmie</h2>
                     <div class="form-group">
                         <label for="companyName" class="sr-only"></label>
-                        <input class="form-control" type="text" id="companyName" placeholder="Nazwa firmy">
+                        <input class="form-control" type="text" id="companyName" required  min="3" placeholder="Nazwa firmy">
                     </div>
                     <div class="form-group">
                         <label for="street" class="sr-only"></label>
-                        <input class="form-control" type="text" id="street" placeholder="Ulica">
+                        <input class="form-control" type="text" id="street" required placeholder="Ulica">
                     </div>
                     <div class="form-group">
                         <label for="city" class="sr-only"></label>
-                        <input class="form-control" type="text" id="city" placeholder="Miasto">
+                        <input class="form-control" type="text" id="city" required placeholder="Miasto">
                     </div>
                     <div class="form-group">
                         <label for="zip" class="sr-only"></label>
-                        <input class="form-control" type="text" id="zip" placeholder="Kod pocztowy">
+                        <input class="form-control" type="text" id="zip" required placeholder="Kod pocztowy">
                     </div>
                     <div class="form-group">
                         <label for="email" class="sr-only"></label>
-                        <input class="form-control" type="email" id="email" placeholder="E-mail">
+                        <input class="form-control" type="email" id="email" required placeholder="E-mail">
                     </div>
                     <div class="form-group">
                         <label for="phone" class="sr-only"></label>
@@ -93,7 +93,7 @@
                     </div>
                     <div class="form-group">
                         <label for="mobile" class="sr-only"></label>
-                        <input class="form-control" type="tel" id="mobile" placeholder="Telefon kom.">
+                        <input class="form-control" type="tel" id="mobile" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="Telefon kom.">
                     </div>
                     <div class="form-group">
                         <label for="fax" class="sr-only"></label>
@@ -101,20 +101,20 @@
                     </div>
                     <div class="form-group">
                         <label for="website" class="sr-only"></label>
-                        <input class="form-control" type="url" id="website" placeholder="Strona internetowa">
+                        <input class="form-control" type="url" id="website" required placeholder="Strona internetowa">
                     </div>
                     <h2>Dane osobowe</h2>
                     <div class="form-group">
                         <label for="name" class="sr-only"></label>
-                        <input class="form-control" type="text" id="name" placeholder="Imię">
+                        <input class="form-control" type="text" id="name" required placeholder="Imię">
                     </div>
                     <div class="form-group">
                         <label for="surname" class="sr-only"></label>
-                        <input class="form-control" type="text" id="surname" placeholder="Nazwisko">
+                        <input class="form-control" type="text" id="surname" required placeholder="Nazwisko">
                     </div>
                     <div class="form-group">
                         <label for="yourEmail" class="sr-only"></label>
-                        <input class="form-control" type="email" id="yourEmail" placeholder="Twój e-mail">
+                        <input class="form-control" type="email" id="yourEmail" required placeholder="Twój e-mail">
                     </div>
                     <div class="form-group">
                         <label for="yourEmail" class="sr-only"></label>
@@ -125,13 +125,13 @@
                         <label for="reg-password" class="sr-only">
                     </label>
                         <div id="password-div">
-                            <input class="form-control" type="password" id="reg-password" placeholder="Hasło">
+                            <input class="form-control" type="password" id="reg-password" required placeholder="Hasło">
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="checkbox" id="check1">
                             <label for="defaultCheck1">
-                                <input type="checkbox" value="" id="defaultCheck1">
+                                <input type="checkbox" value="" required id="defaultCheck1">
                                     Wyrażam zgodę na przetwarzanie moich danych osobowych przekazanych w formularzu rejestracyjnym w celu świadczenia usług za pośrednictwem Serwisu.
                             </label>
                         </div>
@@ -139,7 +139,7 @@
                     <div class="form-group">
                         <div class="checkbox" id="check2">
                             <label for="defaultCheck2">
-                                <input type="checkbox" value="" id="defaultCheck2">
+                                <input type="checkbox" value="" required id="defaultCheck2">
                                     Wyrażam zgodę na przetwarzanie moich danych osobowych przekazanych w formularzu rejestracyjnym w celu świadczenia usług za pośrednictwem Serwisu.
                                 </label>
                         </div>
@@ -158,10 +158,12 @@
                         <label for="emailName" class="sr-only"></label>
                         <input class="form-control" type="email" id="emailName" placeholder="E-mail">
                     </div>
+<!--
                     <div class="form-group">
                         <label for="codeName" class="sr-only"></label>
                         <input class="form-control" type="text" id="codeName" placeholder="Wpisz kod">
                     </div>
+-->
                     <div class="form-group">
                     <div class="g-recaptcha" data-sitekey="6LdglUsUAAAAAAqoGUouNrKnxWcj94jL_5PzEJMv">
                     </div>
@@ -185,6 +187,7 @@
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>

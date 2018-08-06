@@ -32,6 +32,14 @@ $(function () {
                $('#auth-container .alert-danger').addClass("visible");
             }
         });
+        
+        $("#reg-form").validate({
+            rules: {
+                companyName: "required"
+            },
+            messages: "Proszę podać nazwę firmy"
+                
+        });
 
         return false
 
