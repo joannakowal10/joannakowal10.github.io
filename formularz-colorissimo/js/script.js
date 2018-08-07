@@ -41,7 +41,10 @@ $(function () {
 
 
     $("#regForm").submit(function (event) {
-        console.log("shbsdhc");
+       var $buttonClick = $(this).find('button').first();
+
+        $buttonClick.attr("disabled", true);
+
         return false;
     });
 
