@@ -170,3 +170,12 @@ body {
 #auth-container .alert-danger.visible {
    display: block;
 }
+
+#auth-container .error {
+    color: red;
+}
+
+
+#defaultCheck1-error, #defaultCheck2-error {
+    font-weight: 700;
+}

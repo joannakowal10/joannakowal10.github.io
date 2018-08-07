@@ -46,24 +46,38 @@ $(function () {
     });
 
     $("#regForm").validate({
+        errorPlacement: function (error, element) {
+            console.log(element.attr("name"));
+            if (element.attr("type") == "checkbox") {
+                error.appendTo(element.closest(".checkbox"));
+
+                return;
+            } else {
+                error.insertAfter(element);
+            }
+        },
+
         rules: {
             companyName: "required",
             street: "required",
             city: "required",
             zip: "required",
-            email: {required: true,
-                   email: true},
+            email: {
+                required: true,
+                email: true
+            },
+            phone: "required",
             mobile: "required",
-            website: "required",
-             name: "required",
-             surname: "required",
-             yourEmail: "required",
-             regPassword: "required",
-            defaultCheck1: {required: "#defultCheck1:checked"}, 
-            defaultCheck2: "required", 
-            
-            
-            
+            name: "required",
+            surname: "required",
+            yourEmail: "required",
+            position: "required",
+            regPassword: "required",
+            defaultCheck1: "required",
+            defaultCheck2: "required"
+
+
+
         },
 
         messages: {
@@ -71,17 +85,20 @@ $(function () {
             street: "Podaj nazwę ulicy",
             city: "Podaj nazwę miasta",
             zip: "Podaj kod pocztowy",
-            email: {required: "Wpisz adres e-mail",
-                   email: "Twój adres musi zawierać @"},
+            email: {
+                required: "Wpisz adres e-mail",
+                email: "Twój adres musi zawierać @"
+            },
+            phone: "Podaj numer telefonu",
             mobile: "Podaj numer telefonu",
-            website: "Podaj adres strony internetowej",
             name: "Podaj swoje imię",
-             surname: "Podaj swoje nazwisko",
-             yourEmail: "Podaj swój adres e-mail",
-             regPassword: "Podaj hasło",
-            defaultCheck1: "Zaznacz to pole jeśli chcesz kontynować", 
+            surname: "Podaj swoje nazwisko",
+            yourEmail: "Podaj swój adres e-mail",
+            position: "Podaj swoje stanowisko",
+            regPassword: "Podaj hasło",
+            defaultCheck1: "Zaznacz to pole jeśli chcesz kontynować",
             defaultCheck2: "Zaznacz to pole jeśli chcesz kontynować",
-            
+
 
         }
 
