@@ -38,16 +38,6 @@ $(function () {
     });
 
 
-
-
-    $("#regForm").submit(function (event) {
-       var $buttonClick = $(this).find('button').first();
-
-        $buttonClick.attr("disabled", true);
-
-        return false;
-    });
-
     $("#regForm").validate({
         errorPlacement: function (error, element) {
             console.log(element.attr("name"));
@@ -69,17 +59,16 @@ $(function () {
                 required: true,
                 email: true
             },
+
             phone: "required",
             mobile: "required",
-            name: "required",
+            myName: "required",
             surname: "required",
             yourEmail: "required",
             position: "required",
             regPassword: "required",
             defaultCheck1: "required",
             defaultCheck2: "required"
-
-
 
         },
 
@@ -94,7 +83,7 @@ $(function () {
             },
             phone: "Podaj numer telefonu",
             mobile: "Podaj numer telefonu",
-            name: "Podaj swoje imię",
+            myName: "Podaj swoje imię",
             surname: "Podaj swoje nazwisko",
             yourEmail: "Podaj swój adres e-mail",
             position: "Podaj swoje stanowisko",
@@ -102,22 +91,28 @@ $(function () {
             defaultCheck1: "Zaznacz to pole jeśli chcesz kontynować",
             defaultCheck2: "Zaznacz to pole jeśli chcesz kontynować",
 
-
         }
-
-
-
-        //
-        //        $("#regForm").validate({
-        //            rules: {
-        //                companyName: "required"
-        //            },
-        //            
-        //            messages: {
-        //                companyName: "Proszę podać nazwę firmy"
-        //            }
-        //        });
-
-
     });
+
+    $("#regForm").submit(function (event) {
+
+        if($("#regForm").valid()) {
+
+            var $buttonClick = $(this).find('button').first();
+
+            $buttonClick.attr("disabled", true);
+
+            $.post('https://colorissimo.com/default/register/add')
+          console.log("test");    
+        } 
+        
+        else {
+            alert("BŁĄD")
+            console.log("test");  
+        }
+        
+        return false;
+    });
+
+
 });

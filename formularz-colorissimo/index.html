@@ -29,7 +29,7 @@
         <!-- Tab panes -->
         <div class="tab-content">
             <div role="tabpanel" class="tab-pane active" id="log">
-                <form id="logForm" >
+                <form id="logForm">
                     <div class="form-group">
                         <label for="user" class="sr-only"></label>
                         <input class="form-control input-lg" type="text" id="user" placeholder="ID użytkownika">
@@ -54,10 +54,10 @@
   <div class="double-bounce2"></div>
 </div>
   </button>
-                   <div class="form-group">
-                    <div class="alert alert-danger" role="alert">
-  Nieprawidłowy login lub hasło
-</div>
+                    <div class="form-group">
+                        <div class="alert alert-danger" role="alert">
+                            Nieprawidłowy login lub hasło
+                        </div>
                     </div>
                     <button type="button" class="btn btn-link btn-block" id="link-remind">Nie pamiętasz hasła?</button>
                 </form>
@@ -73,19 +73,19 @@
                     </div>
                     <div class="form-group">
                         <label for="street" class="sr-only"></label>
-                        <input class="form-control" type="text" id="street" name="street"  placeholder="Ulica">
+                        <input class="form-control" type="text" id="street" name="street" placeholder="Ulica">
                     </div>
                     <div class="form-group">
                         <label for="city" class="sr-only"></label>
-                        <input class="form-control" type="text" id="city" name="city"  placeholder="Miasto">
+                        <input class="form-control" type="text" id="city" name="city" placeholder="Miasto">
                     </div>
                     <div class="form-group">
                         <label for="zip" class="sr-only"></label>
-                        <input class="form-control" type="text" id="zip" name="zip"  placeholder="Kod pocztowy">
+                        <input class="form-control" type="text" id="zip" name="zip" placeholder="Kod pocztowy">
                     </div>
                     <div class="form-group">
                         <label for="email" class="sr-only"></label>
-                        <input class="form-control" type="email" id="email" name="email"  placeholder="E-mail">
+                        <input class="form-control" type="email" id="email" name="email" placeholder="E-mail">
                     </div>
                     <div class="form-group">
                         <label for="phone" class="sr-only"></label>
@@ -93,7 +93,7 @@
                     </div>
                     <div class="form-group">
                         <label for="mobile" class="sr-only"></label>
-                        <input class="form-control" type="tel" id="mobile" name="mobile"  placeholder="Telefon kom.">
+                        <input class="form-control" type="tel" id="mobile" name="mobile" placeholder="Telefon kom.">
                     </div>
                     <div class="form-group">
                         <label for="fax" class="sr-only"></label>
@@ -101,20 +101,20 @@
                     </div>
                     <div class="form-group">
                         <label for="website" class="sr-only"></label>
-                        <input class="form-control" type="url" id="website" name="website"  placeholder="Strona internetowa">
+                        <input class="form-control" type="url" id="website" name="website" placeholder="Strona internetowa">
                     </div>
                     <h2>Dane osobowe</h2>
                     <div class="form-group">
-                        <label for="name" class="sr-only"></label>
-                        <input class="form-control" type="text" id="name" name="name"  placeholder="Imię">
+                        <label for="myName" class="sr-only"></label>
+                        <input class="form-control" type="text" id="name" name="myName" placeholder="Imię">
                     </div>
                     <div class="form-group">
                         <label for="surname" class="sr-only"></label>
-                        <input class="form-control" type="text" id="surname" name="surname"  placeholder="Nazwisko">
+                        <input class="form-control" type="text" id="surname" name="surname" placeholder="Nazwisko">
                     </div>
                     <div class="form-group">
                         <label for="yourEmail" class="sr-only"></label>
-                        <input class="form-control" type="email" id="yourEmail" name="yourEmail"  placeholder="Twój e-mail">
+                        <input class="form-control" type="email" id="yourEmail" name="yourEmail" placeholder="Twój e-mail">
                     </div>
                     <div class="form-group">
                         <label for="position" class="sr-only"></label>
@@ -125,7 +125,7 @@
                         <label for="regPassword" class="sr-only">
                     </label>
                         <div id="password-div">
-                            <input class="form-control" type="password" id="regPassword" name="regPassword"  placeholder="Hasło">
+                            <input class="form-control" type="password" id="regPassword" name="regPassword" placeholder="Hasło">
                         </div>
                     </div>
                     <div class="form-group">
@@ -158,15 +158,9 @@
                         <label for="emailName" class="sr-only"></label>
                         <input class="form-control" type="email" id="emailName" placeholder="E-mail">
                     </div>
-<!--
                     <div class="form-group">
-                        <label for="codeName" class="sr-only"></label>
-                        <input class="form-control" type="text" id="codeName" placeholder="Wpisz kod">
-                    </div>
--->
-                    <div class="form-group">
-                    <div class="g-recaptcha" data-sitekey="6LdglUsUAAAAAAqoGUouNrKnxWcj94jL_5PzEJMv">
-                    </div>
+                        <div class="g-recaptcha" data-sitekey="6LdglUsUAAAAAAqoGUouNrKnxWcj94jL_5PzEJMv">
+                        </div>
                     </div>
                     <button type="submit" class="btn btn-default btn-lg btn-block" id="btn-rem"><span>WYŚLIJ</span>
                     <div class="spinner">
@@ -182,10 +176,7 @@
     <div>
 
     </div>
-  <script
-  src="https://code.jquery.com/jquery-1.12.4.js"
-  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
-  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
