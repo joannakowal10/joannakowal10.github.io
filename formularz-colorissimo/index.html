@@ -29,7 +29,7 @@
         <!-- Tab panes -->
         <div class="tab-content">
             <div role="tabpanel" class="tab-pane active" id="log">
-                <form id="log-form" action="https://colorissimo.com/default/login/process">
+                <form id="logForm" >
                     <div class="form-group">
                         <label for="user" class="sr-only"></label>
                         <input class="form-control input-lg" type="text" id="user" placeholder="ID użytkownika">
@@ -65,73 +65,73 @@
                 </div>
             </div>
             <div role="tabpanel" class="tab-pane" id="register">
-                <form id="reg-form" action="">
+                <form id="regForm" action="">
                     <h2>Informacje o firmie</h2>
                     <div class="form-group">
                         <label for="companyName" class="sr-only"></label>
-                        <input class="form-control" type="text" id="companyName" name="companyName" required  minlength="3" placeholder="Nazwa firmy">
+                        <input class="form-control" type="text" id="companyName" name="companyName" placeholder="Nazwa firmy">
                     </div>
                     <div class="form-group">
                         <label for="street" class="sr-only"></label>
-                        <input class="form-control" type="text" id="street" required placeholder="Ulica">
+                        <input class="form-control" type="text" id="street" name="street"  placeholder="Ulica">
                     </div>
                     <div class="form-group">
                         <label for="city" class="sr-only"></label>
-                        <input class="form-control" type="text" id="city" required placeholder="Miasto">
+                        <input class="form-control" type="text" id="city" name="city"  placeholder="Miasto">
                     </div>
                     <div class="form-group">
                         <label for="zip" class="sr-only"></label>
-                        <input class="form-control" type="text" id="zip" required placeholder="Kod pocztowy">
+                        <input class="form-control" type="text" id="zip" name="zip"  placeholder="Kod pocztowy">
                     </div>
                     <div class="form-group">
                         <label for="email" class="sr-only"></label>
-                        <input class="form-control" type="email" id="email" required placeholder="E-mail">
+                        <input class="form-control" type="email" id="email" name="email"  placeholder="E-mail">
                     </div>
                     <div class="form-group">
                         <label for="phone" class="sr-only"></label>
-                        <input class="form-control" type="tel" id="phone" placeholder="Telefon">
+                        <input class="form-control" type="tel" id="phone" name="phone" placeholder="Telefon">
                     </div>
                     <div class="form-group">
                         <label for="mobile" class="sr-only"></label>
-                        <input class="form-control" type="tel" id="mobile" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="Telefon kom.">
+                        <input class="form-control" type="tel" id="mobile" name="mobile"  placeholder="Telefon kom.">
                     </div>
                     <div class="form-group">
                         <label for="fax" class="sr-only"></label>
-                        <input class="form-control" type="text" id="fax" placeholder="Fax">
+                        <input class="form-control" type="text" id="fax" name="fax" placeholder="Fax">
                     </div>
                     <div class="form-group">
                         <label for="website" class="sr-only"></label>
-                        <input class="form-control" type="url" id="website" required placeholder="Strona internetowa">
+                        <input class="form-control" type="url" id="website" name="website"  placeholder="Strona internetowa">
                     </div>
                     <h2>Dane osobowe</h2>
                     <div class="form-group">
                         <label for="name" class="sr-only"></label>
-                        <input class="form-control" type="text" id="name" required placeholder="Imię">
+                        <input class="form-control" type="text" id="name" name="name"  placeholder="Imię">
                     </div>
                     <div class="form-group">
                         <label for="surname" class="sr-only"></label>
-                        <input class="form-control" type="text" id="surname" required placeholder="Nazwisko">
+                        <input class="form-control" type="text" id="surname" name="surname"  placeholder="Nazwisko">
                     </div>
                     <div class="form-group">
                         <label for="yourEmail" class="sr-only"></label>
-                        <input class="form-control" type="email" id="yourEmail" required placeholder="Twój e-mail">
+                        <input class="form-control" type="email" id="yourEmail" name="yourEmail"  placeholder="Twój e-mail">
                     </div>
                     <div class="form-group">
-                        <label for="yourEmail" class="sr-only"></label>
-                        <input class="form-control" type="text" id="position" placeholder="Stanowisko">
+                        <label for="position" class="sr-only"></label>
+                        <input class="form-control" type="text" id="position" name="position" placeholder="Stanowisko">
                     </div>
                     <h2>Hasło</h2>
                     <div class="form-group">
-                        <label for="reg-password" class="sr-only">
+                        <label for="regPassword" class="sr-only">
                     </label>
                         <div id="password-div">
-                            <input class="form-control" type="password" id="reg-password" required placeholder="Hasło">
+                            <input class="form-control" type="password" id="regPassword" name="regPassword"  placeholder="Hasło">
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="checkbox" id="check1">
                             <label for="defaultCheck1">
-                                <input type="checkbox" value="" required id="defaultCheck1">
+                                <input type="checkbox" value=""  name="defaultCheck1" id="defaultCheck1">
                                     Wyrażam zgodę na przetwarzanie moich danych osobowych przekazanych w formularzu rejestracyjnym w celu świadczenia usług za pośrednictwem Serwisu.
                             </label>
                         </div>
@@ -139,7 +139,7 @@
                     <div class="form-group">
                         <div class="checkbox" id="check2">
                             <label for="defaultCheck2">
-                                <input type="checkbox" value="" required id="defaultCheck2">
+                                <input type="checkbox" value=""  name="defaultCheck2" id="defaultCheck2">
                                     Wyrażam zgodę na przetwarzanie moich danych osobowych przekazanych w formularzu rejestracyjnym w celu świadczenia usług za pośrednictwem Serwisu.
                                 </label>
                         </div>
