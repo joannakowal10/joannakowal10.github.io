@@ -119,8 +119,7 @@ $(function () {
 
                                     if (response.status == 1 && response.redirect != undefined) {
 //                                        window.location = response.redirect;
-                                        $("ul").append($("<div>",{"class":"alert alert-success"}).html(data.message));
-					$(".tab-content").remove();
+                                        $("#btn-reg").append($("<div>",{"class":"alert alert-success"}).html(data.message));
                                     } else {
                                         unblockButton();
                                         $('.alert').alert()
