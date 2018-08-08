@@ -118,7 +118,7 @@ $(function () {
                         $.post('https://colorissimo.com/default/register/add', $(this).serializeArray(), function (response) {
 
                                     if (response.status == 1 && response.redirect != undefined) {
-                                        window.location = response.redirect;
+//                                        window.location = response.redirect;
                                         $("ul").append($("<div>",{"class":"alert alert-success"}).html(data.message));
 					$(".tab-content").remove();
                                     } else {
