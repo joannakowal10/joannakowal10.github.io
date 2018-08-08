@@ -56,8 +56,7 @@ body {
     padding: 20px 0;
     font-size: 18px;
     text-align: center;
-    text-decoration: none;
-    
+    text-decoration: none;  
 }
 
 #auth-container .nav-tabs>li.active>a {
@@ -107,7 +106,7 @@ body {
   height: 30px;
   position: absolute;
   top: 50%;
-    transform: translateY(-50%);
+  transform: translateY(-50%);
   left: calc(50% - 16px);
 }
 
@@ -169,3 +168,4 @@ body {
 #defaultCheck1-error, #defaultCheck2-error {
     font-weight: 700;
 }
+
