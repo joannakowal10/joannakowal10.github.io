@@ -119,7 +119,8 @@ $(function () {
 
                                     if (response.status == 1 && response.redirect != undefined) {
                                         window.location = response.redirect;
-                                        console.log("ok");
+                                        $("ul").append($("<div>",{"class":"alert alert-success"}).html(data.message));
+					$(".tab-content").remove();
                                     } else {
                                         unblockButton();
                                         $('.alert').alert()
