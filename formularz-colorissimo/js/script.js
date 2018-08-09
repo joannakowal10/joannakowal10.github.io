@@ -133,4 +133,29 @@ $(function () {
 
 
                     });
+    
+              $("#remindForm").submit(function (event) {
+
+                
+                        var $buttonClick = $(this).find('button').first();
+                        $buttonClick.attr("disabled", true);
+                        $.post('https://colorissimo.com/Login/forgot', $(this).serializeArray(), function(response) {
+
+                                    if (response.status == 1) { 
+                
+                                        $(".ok_message").html(response.message);
+                                        unblockButton();
+                                    } else {
+                                        unblockButton();
+                                        $('.alert').alert()
+                                        $('#auth-container .alert-danger').addClass("visible");
+                                    }
+                                });
+
+                            return false;
+                      
+
+
+                    });
+               
             });
