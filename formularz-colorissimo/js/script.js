@@ -136,16 +136,16 @@ $(function () {
     
               $("#remindForm").submit(function (event) {
 
-                
+                console.log("test");
                         var $buttonClick = $(this).find('button').first();
                         $buttonClick.attr("disabled", true);
                         $.post('https://colorissimo.com/Login/forgot', $(this).serializeArray(), function(response) {
 
-                                    if (response.status == 1) { 
-                console.log("test");
+                                    if (response.status == 3) { 
+                
                                         $(".ok_message").html(response.message);
                                         unblockButton();
-                                    } else {
+                                    } else if (data.status == 1) {
                                         unblockButton();
                                         $('.alert').alert()
                                         $('#auth-container .alert-danger').addClass("visible");
