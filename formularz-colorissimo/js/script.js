@@ -117,9 +117,10 @@ $(function () {
                         $buttonClick.attr("disabled", true);
                         $.post('https://colorissimo.com/default/register/add', $(this).serializeArray(), function (response) {
 
-                                    if (response.status == 1 && response.redirect != undefined) {
-//                                        window.location = response.redirect;
-                                        $("#btn-reg").append($("<div>",{"class":"alert alert-success"}).html(data.message));
+                                    if (response.status == 1) { 
+                
+                                        $("#ok_message").html(response.message);
+                                        unblockButton();
                                     } else {
                                         unblockButton();
                                         $('.alert').alert()
