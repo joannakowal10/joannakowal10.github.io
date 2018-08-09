@@ -143,9 +143,10 @@ $(function () {
                         $.post('https://colorissimo.com/Login/forgot', $(this).serializeArray(), function(response) {
 
                                     if (response.status == 3) { 
-                
+                                    $("#captcha").val("");
+                                     unblockButton();
                                         $(".ok_message").html(response.message);
-                                        unblockButton();
+                                
                                     } else if (response.status == 1) {
                                         unblockButton();
                                         $('.alert').alert()
