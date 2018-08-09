@@ -145,7 +145,7 @@ $(function () {
                 
                                         $(".ok_message").html(response.message);
                                         unblockButton();
-                                    } else if (data.status == 1) {
+                                    } else if (response.status == 1) {
                                         unblockButton();
                                         $('.alert').alert()
                                         $('#auth-container .alert-danger').addClass("visible");
