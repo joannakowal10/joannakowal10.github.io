@@ -56,10 +56,10 @@ $(function () {
                 },
 
                 rules: {
-                    companyName: "required",
+                    name: "required",
                     street: "required",
                     city: "required",
-                    zip: "required",
+                    postal_code: "required",
                     email: {
                         required: true,
                         email: true
@@ -67,11 +67,11 @@ $(function () {
 
                     phone: "required",
                     mobile: "required",
-                    myName: "required",
-                    surname: "required",
-                    yourEmail: "required",
-                    position: "required",
-                    regPassword: {
+                    agent_firstname: "required",
+                    agent_lastname: "required",
+                    agent_email: "required",
+                    agent_position: "required",
+                    pass: {
                         required: true,
                         minlength: 8,
                         regex: {
@@ -84,21 +84,21 @@ $(function () {
                 },
 
                 messages: {
-                    companyName: "Podaj nazwę firmy",
+                    name: "Podaj nazwę firmy",
                     street: "Podaj nazwę ulicy",
                     city: "Podaj nazwę miasta",
-                    zip: "Podaj kod pocztowy",
+                    postal_code: "Podaj kod pocztowy",
                     email: {
                         required: "Wpisz adres e-mail",
                         email: "Wpisz poprawny adres e-mail",
                     },
                     phone: "Podaj numer telefonu",
                     mobile: "Podaj numer telefonu",
-                    myName: "Podaj swoje imię",
-                    surname: "Podaj swoje nazwisko",
-                    yourEmail: "Podaj swój adres e-mail",
-                    position: "Podaj swoje stanowisko",
-                    regPassword: {
+                    agent_firstname: "Podaj swoje imię",
+                    agent_lastname: "Podaj swoje nazwisko",
+                    agent_email: "Podaj swój adres e-mail",
+                    agent_position: "Podaj swoje stanowisko",
+                    pass: {
                         required: "Wpisz hasło",
                         minlength: "Hasło powinno zawierać minimum 8 znaków",
                         regex: "Hasło powinno zawierać duża literę lub cyfrę lub znak specjalny"
