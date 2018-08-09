@@ -142,12 +142,12 @@ $(function () {
                         $form = $(this);
                         $.post('https://colorissimo.com/Login/forgot', $(this).serializeArray(), function(response) {
 
-                                    if (response.status == 3) { 
+                                    if (response.status == 1) { 
                             console.log("test2");
                                      unblockButton();
                                         $(".ok_message").html(response.message);
                                 
-                                    } else if (response.status == 1) {
+                                    } else if (response.status == 3) {
                                         unblockButton();
                                         $('.alert').alert()
                                         $('#auth-container .alert-danger').addClass("visible");
