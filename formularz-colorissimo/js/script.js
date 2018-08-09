@@ -119,7 +119,7 @@ $(function () {
 
                 if (response.status == 1) {
 
-                    $(".ok_message").html(response.message);
+                    $("#ok_message_reg").html(response.message);
                     unblockButton();
                 } else {
                     unblockButton();
@@ -143,7 +143,7 @@ $(function () {
             if (response.status == 1) {
                 console.log("test2");
                 unblockButton();
-                $(".ok_message").html(response.message);
+                $("#ok_message_rem").html(response.message);
 
             } else if (response.status == 3) {
                 unblockButton();
