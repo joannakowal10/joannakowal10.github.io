@@ -142,7 +142,7 @@ $(function () {
                         $.post('https://colorissimo.com/Login/forgot', $(this).serializeArray(), function(response) {
 
                                     if (response.status == 1) { 
-                
+                console.log("test");
                                         $(".ok_message").html(response.message);
                                         unblockButton();
                                     } else {
