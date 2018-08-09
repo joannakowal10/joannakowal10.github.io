@@ -139,6 +139,7 @@ $(function () {
                 console.log("test");
                         var $buttonClick = $(this).find('button').first();
                         $buttonClick.attr("disabled", true);
+                        $form = $(this);
                         $.post('https://colorissimo.com/Login/forgot', $(this).serializeArray(), function(response) {
 
                                     if (response.status == 3) { 
