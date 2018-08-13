@@ -7,7 +7,7 @@ $(function () {
         $("#log-panel a").click();
     });
 
-    
+
 
     $("#log-form").submit(function (event) {
 
@@ -15,7 +15,7 @@ $(function () {
         $btnSubmit.attr("disabled", true);
 
         $.post('https://colorissimo.com/default/login/process', $(this).serializeArray(), {
-//            referrer: '/',
+            //            referrer: '/',
             login: $('#user').val(),
             pass: $('#log-password').val(),
             remember_me: 0
@@ -116,7 +116,7 @@ $(function () {
 
                 if (response.status == 1) {
 
-                   successMessage('#reg-form', response.message);
+                    successMessage('#reg-form', response.message);
 
                     $btnSubmit.attr("disabled", false);
                     $('#reg-form')[0].reset();
@@ -132,45 +132,47 @@ $(function () {
             return false;
         };
     });
-    
+
     $('#remind-form').validate({
         rules: {
             mail: {
                 required: true,
                 email: true
-            }},
+            }
+        },
         messages: {
             mail: {
                 required: "Podaj adres e-mail",
                 email: "Podaj poprawny adres e-mail"
             }
-            
+
         }
-        
+
     })
 
     $('#remind-form').submit(function (event) {
-        
+console.log($("#remind-form").valid())
+        ;
         if ($("#remind-form").valid()) {
 
-        var $btnSubmit = $(this).find('button').first();
-        $btnSubmit.attr("disabled", true);
+            var $btnSubmit = $(this).find('button').first();
+            $btnSubmit.attr("disabled", true);
 
-        $.post('https://colorissimo.com/default/login/remind', $(this).serializeArray(), function (response) {
+            $.post('https://colorissimo.com/default/login/remind', $(this).serializeArray(), function (response) {
 
-            if (response.status == 1) {
-                console.log("test2");
-                $btnSubmit.attr("disabled", false);
-                successMessage("#remind-form", response.message);
+                if (response.status == 1) {
+                    console.log("test2");
+                    $btnSubmit.attr("disabled", false);
+                    successMessage("#remind-form", response.message);
 
-            } else if (response.status == 3) {
-                $btnSubmit.attr("disabled", false);
-                $('#remind-form .alert-danger').addClass("visible");
-            }
-        });
+                } else if (response.status == 3) {
+                    $btnSubmit.attr("disabled", false);
+                    $('#remind-form .alert-danger').addClass("visible");
+                }
+            });
 
-        return false;
-}
+            return false;
+        }
     });
 
 });
