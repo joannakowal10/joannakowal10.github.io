@@ -151,7 +151,7 @@ $(function () {
 
     $('#remind-form').submit(function (event) {
         
-        if ($("#reg-form").valid()) {
+        if ($("#remind-form").valid()) {
 
         var $btnSubmit = $(this).find('button').first();
         $btnSubmit.attr("disabled", true);
