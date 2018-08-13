@@ -7,11 +7,11 @@ $(function () {
         $("#log-panel a").click();
     });
 
-    var $btnSubmit = $(this).find('button').first();
+    
 
     $("#log-form").submit(function (event) {
 
-
+        var $btnSubmit = $(this).find('button').first();
         $btnSubmit.attr("disabled", true);
 
         $.post('https://colorissimo.com/default/login/process', $(this).serializeArray(), {
@@ -135,7 +135,7 @@ $(function () {
 
     $('#remind-form').submit(function (event) {
 
-//        var $buttonClick = $(this).find('button').first();
+        var $buttonClick = $(this).find('button').first();
         $btnSubmit.attr("disabled", true);
         $form = $(this);
         $.post('https://colorissimo.com/default/login/remind', $(this).serializeArray(), function (response) {
