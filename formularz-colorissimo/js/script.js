@@ -135,7 +135,7 @@ $(function () {
 
     $('#remind-form').submit(function (event) {
 
-        var $buttonClick = $(this).find('button').first();
+//        var $buttonClick = $(this).find('button').first();
         $btnSubmit.attr("disabled", true);
         $form = $(this);
         $.post('https://colorissimo.com/default/login/remind', $(this).serializeArray(), function (response) {
