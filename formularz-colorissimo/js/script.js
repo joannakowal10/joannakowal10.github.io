@@ -135,12 +135,12 @@ $(function () {
     
     $('#remind-form').validate({
         rules: {
-            email: {
+            mail: {
                 required: true,
                 email: true
             }},
         messages: {
-            email: {
+            mail: {
                 required: "Podaj adres e-mail",
                 email: "Podaj poprawny adres e-mail"
             }
