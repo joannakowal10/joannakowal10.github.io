@@ -132,8 +132,26 @@ $(function () {
             return false;
         };
     });
+    
+    $('#remind-form').validate({
+        rules: {
+            email: {
+                required: true,
+                email: true
+            }},
+        messages: {
+            email: {
+                required: "Podaj adres e-mail",
+                email: "Podaj poprawny adres e-mail"
+            }
+            
+        }
+        
+    })
 
     $('#remind-form').submit(function (event) {
+        
+        if ($("#reg-form").valid()) {
 
         var $btnSubmit = $(this).find('button').first();
         $btnSubmit.attr("disabled", true);
@@ -152,7 +170,7 @@ $(function () {
         });
 
         return false;
-
+}
     });
 
 });
