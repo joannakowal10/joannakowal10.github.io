@@ -14,8 +14,8 @@ $(function () {
 
         $btnSubmit.attr("disabled", true);
 
-        $.post('https://colorissimo.com/default/login/process', {
-            referrer: '/',
+        $.post('https://colorissimo.com/default/login/process', $(this).serializeArray(), {
+//            referrer: '/',
             login: $('#user').val(),
             pass: $('#log-password').val(),
             remember_me: 0
