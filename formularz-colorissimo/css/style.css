@@ -161,7 +161,7 @@ body {
    display: block;
 }
 
-#reg-form .error {
+#reg-form .error, #remind-form .error {
     color: red;
 }
 
