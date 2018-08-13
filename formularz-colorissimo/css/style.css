@@ -151,21 +151,27 @@ body {
    display: flex;
         }
 
-#auth-container .alert-danger {
+#reg-form .alert-danger, #log-form .alert-danger, #remind-form .alert-danger{
    display: none;
    margin-top: 15px;
 
 }
 
-#auth-container .alert-danger.visible {
+#reg-form .alert-danger.visible, #log-form .alert-danger.visible, #remind-form .alert-danger.visible {
    display: block;
 }
 
-#auth-container .error {
+#reg-form .error {
     color: red;
 }
 
-#defaultCheck1-error, #defaultCheck2-error {
-    font-weight: 700;
+
+#reg-form .alert-success, #remind-form .alert-success {
+    display: none;
+    margin-top: 15px;
+}
+
+#reg-form .alert-success.visible, #remind-form .alert-success.visible {
+    display: block;
 }
 

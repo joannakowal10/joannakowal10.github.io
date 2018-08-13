@@ -7,15 +7,12 @@ $(function () {
         $("#log-panel a").click();
     });
 
-    function unblockButton() {
-        $('.btn-default').prop("disabled", false);
-    };
+    var $btnSubmit = $(this).find('button').first();
 
-    $("#logForm").submit(function (event) {
+    $("#log-form").submit(function (event) {
 
-        var $buttonClick = $(this).find('button').first();
 
-        $buttonClick.attr("disabled", true);
+        $btnSubmit.attr("disabled", true);
 
         $.post('https://colorissimo.com/default/login/process', {
             referrer: '/',
@@ -27,9 +24,8 @@ $(function () {
             if (response.status == 1 && response.redirect != undefined) {
                 window.location = response.redirect;
             } else {
-                unblockButton();
-                $('.alert').alert()
-                $('#auth-container .alert-danger').addClass("visible");
+                $btnSubmit.attr("disabled", false);
+                $('#log-form .alert-danger').addClass("visible");
             }
         });
 
@@ -42,7 +38,7 @@ $(function () {
     });
 
 
-    $("#regForm").validate({
+    $("#reg-form").validate({
 
         errorPlacement: function (error, element) {
             console.log(element.attr("name"));
@@ -78,8 +74,8 @@ $(function () {
                     pattern: /^((?=.*\W+)|(?=.*\d)|(?=.*[A-Z]))(?=.*[a-z])(?![.\n]).*/
                 }
             },
-            defaultCheck1: "required",
-            defaultCheck2: "required"
+            rule_1: "required",
+            rule_2: "required"
 
         },
 
@@ -89,8 +85,8 @@ $(function () {
             city: "Podaj nazwę miasta",
             postal_code: "Podaj kod pocztowy",
             email: {
-                required: "Wpisz adres e-mail",
-                email: "Wpisz poprawny adres e-mail",
+                required: "Podaj adres e-mail",
+                email: "Podaj poprawny adres e-mail",
             },
             phone: "Podaj numer telefonu",
             mobile: "Podaj numer telefonu",
@@ -103,28 +99,33 @@ $(function () {
                 minlength: "Hasło powinno zawierać minimum 8 znaków",
                 regex: "Hasło powinno zawierać duża literę lub cyfrę lub znak specjalny"
             },
-            defaultCheck1: "Zaznacz to pole jeśli chcesz kontynować",
-            defaultCheck2: "Zaznacz to pole jeśli chcesz kontynować",
+            rule_1: "Zaznacz to pole jeśli chcesz kontynować",
+            rule_2: "Zaznacz to pole jeśli chcesz kontynować",
 
         }
     });
 
-    $("#regForm").submit(function (event) {
+    $("#reg-form").submit(function (event) {
 
-        if ($("#regForm").valid()) {
+        if ($("#reg-form").valid()) {
 
             var $buttonClick = $(this).find('button').first();
-            $buttonClick.attr("disabled", true);
+            $btnSubmit.attr("disabled", true);
+
             $.post('https://colorissimo.com/default/register/add', $(this).serializeArray(), function (response) {
 
                 if (response.status == 1) {
 
-                    $("#regForm .ok_message").html(response.message);
-                    unblockButton();
+                   successMessage('#reg-form', response.message);
+
+                    $btnSubmit.attr("disabled", false);
+                    $('#reg-form')[0].reset();
+                    console.log("blabla3");
+
                 } else {
-                    unblockButton();
-                    $('.alert').alert()
-                    $('#auth-container .alert-danger').addClass("visible");
+                    $btnSubmit.attr("disabled", false);
+                    $('#reg-form .alert-danger').addClass("visible");
+                    console.log("blabla");
                 }
             });
 
@@ -132,23 +133,21 @@ $(function () {
         };
     });
 
-    $("#remindForm").submit(function (event) {
+    $('#remind-form').submit(function (event) {
 
-        console.log("test");
         var $buttonClick = $(this).find('button').first();
-        $buttonClick.attr("disabled", true);
+        $btnSubmit.attr("disabled", true);
         $form = $(this);
         $.post('https://colorissimo.com/Login/forgot', $(this).serializeArray(), function (response) {
 
             if (response.status == 1) {
                 console.log("test2");
-                unblockButton();
-                $("#remindForm .ok_message").html(response.message);
+                $btnSubmit.attr("disabled", false);
+                successMessage("#remind-form", response.message);
 
             } else if (response.status == 3) {
-                unblockButton();
-                $('.alert').alert()
-                //$('#auth-container .alert-danger').addClass("visible");
+                $btnSubmit.attr("disabled", false);
+                $('#remind-form .alert-danger').addClass("visible");
             }
         });
 
@@ -158,4 +157,12 @@ $(function () {
 
     });
 
+
+
 });
+
+function successMessage(formId, htmlMessage) {
+    var $successMessage = $(formId + ' .alert-success');
+    $successMessage.html(htmlMessage);
+    $successMessage.addClass("visible");
+}

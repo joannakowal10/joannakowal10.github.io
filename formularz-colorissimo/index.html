@@ -29,31 +29,22 @@
         <!-- Tab panes -->
         <div class="tab-content">
             <div role="tabpanel" class="tab-pane active" id="log">
-                <form id="logForm">
+                <form id="log-form">
                     <div class="form-group">
-                        <label for="user" class="sr-only"></label>
                         <input class="form-control input-lg" type="text" id="user" placeholder="ID użytkownika">
                     </div>
                     <div class="form-group">
-                        <label for="log-password" class="sr-only"></label>
                         <div id="password-div">
                             <input class="form-control input-lg" type="password" id="log-password" placeholder="Hasło">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox"> Zapamiętaj mnie
-                            </label>
                         </div>
                     </div>
                     <button type="submit" class="btn btn-default btn-lg btn-block" id="btn-log">
                         <span>ZALOGUJ SIĘ</span>
                         <div class="spinner">
-  <div class="double-bounce1"></div>
-  <div class="double-bounce2"></div>
-</div>
-  </button>
+                            <div class="double-bounce1"></div>
+                            <div class="double-bounce2"></div>
+                        </div>
+                    </button>
                     <div class="form-group">
                         <div class="alert alert-danger" role="alert">
                             Nieprawidłowy login lub hasło
@@ -65,110 +56,104 @@
                 </div>
             </div>
             <div role="tabpanel" class="tab-pane" id="register">
-                <form id="regForm" action="">
+                <form id="reg-form" action="">
                     <h2>Informacje o firmie</h2>
                     <div class="form-group">
-                        <label for="name" class="sr-only"></label>
                         <input class="form-control" type="text" id="name" name="name" placeholder="Nazwa firmy">
                     </div>
                     <div class="form-group">
-                        <label for="street" class="sr-only"></label>
                         <input class="form-control" type="text" id="street" name="street" placeholder="Ulica">
                     </div>
                     <div class="form-group">
-                        <label for="city" class="sr-only"></label>
                         <input class="form-control" type="text" id="city" name="city" placeholder="Miasto">
                     </div>
                     <div class="form-group">
-                        <label for="postal_code" class="sr-only"></label>
                         <input class="form-control" type="text" id="postal_code" name="postal_code" placeholder="Kod pocztowy">
                     </div>
                     <div class="form-group">
-                        <label for="email" class="sr-only"></label>
                         <input class="form-control" type="email" id="email" name="email" placeholder="E-mail">
                     </div>
                     <div class="form-group">
-                        <label for="phone" class="sr-only"></label>
                         <input class="form-control" type="tel" id="phone" name="phone" placeholder="Telefon">
                     </div>
                     <div class="form-group">
-                        <label for="mobile" class="sr-only"></label>
                         <input class="form-control" type="tel" id="mobile" name="mobile" placeholder="Telefon kom.">
                     </div>
                     <div class="form-group">
-                        <label for="fax" class="sr-only"></label>
                         <input class="form-control" type="text" id="fax" name="fax" placeholder="Fax">
                     </div>
                     <div class="form-group">
-                        <label for="website" class="sr-only"></label>
                         <input class="form-control" type="url" id="website" name="website" placeholder="Strona internetowa">
                     </div>
                     <h2>Dane osobowe</h2>
                     <div class="form-group">
-                        <label for="agent_firstname" class="sr-only"></label>
                         <input class="form-control" type="text" id="agent_firstname" name="agent_firstname" placeholder="Imię">
                     </div>
                     <div class="form-group">
-                        <label for="agent_lastname" class="sr-only"></label>
                         <input class="form-control" type="text" id="agent_lastname" name="agent_lastname" placeholder="Nazwisko">
                     </div>
                     <div class="form-group">
-                        <label for="agent_email" class="sr-only"></label>
                         <input class="form-control" type="email" id="agent_emaill" name="agent_email" placeholder="Twój e-mail">
                     </div>
                     <div class="form-group">
-                        <label for="agent_position" class="sr-only"></label>
                         <input class="form-control" type="text" id="agent_position" name="agent_position" placeholder="Stanowisko">
                     </div>
                     <h2>Hasło</h2>
                     <div class="form-group">
-                        <label for="pass" class="sr-only">
-                    </label>
                         <div id="password-div">
                             <input class="form-control" type="password" id="pass" name="pass" placeholder="Hasło">
                         </div>
                     </div>
                     <div class="form-group">
-                        <div class="checkbox" id="check1">
-                            <label for="defaultCheck1">
-                                <input type="checkbox" value=""  name="defaultCheck1" id="defaultCheck1">
+                        <div class="checkbox">
+                            <label for="rule_1">
+                                <input type="checkbox" value=""  name="rule_1" id="rule_1">
                                     Wyrażam zgodę na przetwarzanie moich danych osobowych przekazanych w formularzu rejestracyjnym w celu świadczenia usług za pośrednictwem Serwisu.
                             </label>
                         </div>
                     </div>
                     <div class="form-group">
-                        <div class="checkbox" id="check2">
-                            <label for="defaultCheck2">
-                                <input type="checkbox" value=""  name="defaultCheck2" id="defaultCheck2">
+                        <div class="checkbox">
+                            <label for="rule_2">
+                                <input type="checkbox" value=""  name="rule_2" id="rule_2">
                                     Wyrażam zgodę na przetwarzanie moich danych osobowych przekazanych w formularzu rejestracyjnym w celu świadczenia usług za pośrednictwem Serwisu.
                                 </label>
                         </div>
                     </div>
                     <button type="submit" class="btn btn-default btn-lg btn-block" id="btn-reg"><span>ZAREJESTRUJ SIĘ</span>
                     <div class="spinner">
-  <div class="double-bounce1"></div>
-  <div class="double-bounce2"></div>
-</div></button>
-               <div class="ok_message"></div>
+                        <div class="double-bounce1"></div>
+                        <div class="double-bounce2"></div>
+                    </div>
+                    </button>
+                     <div class="form-group">
+                        <div class="alert alert-success" role="alert">  
+                        </div>
+                    </div>
                 </form>
             </div>
             <div role="tabpanel" class="tab-pane" id="remind">
-                <form id="remindForm" action="">
+                <form id="remind-form" action="">
                     <h2>Nie pamiętasz hasła?</h2>
                     <div class="form-group">
-                        <label for="mail" class="sr-only"></label>
                         <input class="form-control" name="mail" type="mail" id="mail" placeholder="E-mail">
                     </div>
+<!--
                     <div class="form-group">
                         <div class="g-recaptcha" id="captcha" data-sitekey="6LdglUsUAAAAAAqoGUouNrKnxWcj94jL_5PzEJMv">
                         </div>
                     </div>
+-->
                     <button type="submit" class="btn btn-default btn-lg btn-block" id="btn-rem"><span>WYŚLIJ</span>
                     <div class="spinner">
-  <div class="double-bounce1"></div>
-  <div class="double-bounce2"></div>
-</div></button>
-                   <div class="ok_message"></div>
+                        <div class="double-bounce1"></div>
+                        <div class="double-bounce2"></div>
+                    </div>
+                    </button>
+                    <div class="form-group">
+                        <div class="alert alert-success" role="alert">  
+                        </div>
+                    </div>
                     <button type="button" class="btn btn-link btn-block" id="link-return">Powrót do strony logowania</button>
                 </form>
             </div>
