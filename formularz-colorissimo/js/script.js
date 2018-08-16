@@ -14,7 +14,9 @@ $(function () {
         var $btnSubmit = $(this).find('button').first();
         $btnSubmit.attr("disabled", true);
 
+        
         $.post('https://colorissimo.com/default/login/process', $("#log-form").serialize()).done(
+            
             function (response) {
                 if (response.status == 1 && response.redirect != undefined) {
                     window.location = response.redirect;
@@ -25,26 +27,7 @@ $(function () {
                     console.log('test logowania 2')
                 }
             }
-        );
-        //        $.post('https://colorissimo.com/default/login/process', $(this).serializeArray(), {
-        //
-        //                //            referrer: '/',
-        //                login: $('#user').val(),
-        //                pass: $('#log-password').val(),
-        //                remember_me: 0
-        //
-        //            },
-        //            function (response) {
-        //                console.log('test logowania')
-        //                if (response.status == 1 && response.redirect != undefined) {
-        //                    window.location = response.redirect;
-        //                    console.log('test logowania 1')
-        //                } else {
-        //                    $btnSubmit.attr("disabled", false);
-        //                    $('#log-form .alert-danger').addClass("visible");
-        //                    console.log('test logowania 2')
-        //                }
-        //            });
+       );
 
         return false
 
