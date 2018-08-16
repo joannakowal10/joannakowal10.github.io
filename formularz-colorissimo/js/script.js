@@ -14,24 +14,37 @@ $(function () {
         var $btnSubmit = $(this).find('button').first();
         $btnSubmit.attr("disabled", true);
 
-        $.post('https://colorissimo.com/default/login/process', $(this).serializeArray(), {
-
-            //            referrer: '/',
-            login: $('#user').val(),
-            pass: $('#log-password').val(),
-            remember_me: 0
-            
-        },  
-               function (response) {
-            if (response.status == 1 && response.redirect != undefined) {
-                window.location = response.redirect;
-                
-            } else {
-                $btnSubmit.attr("disabled", false);
-                $('#log-form .alert-danger').addClass("visible");
-                
+        $.post('https://colorissimo.com/default/login/process', $("#log-form").serialize()).done(
+            function (response) {
+                if (response.status == 1 && response.redirect != undefined) {
+                    window.location = response.redirect;
+                    console.log('test logowania 1')
+                } else {
+                    $btnSubmit.attr("disabled", false);
+                    $('#log-form .alert-danger').addClass("visible");
+                    console.log('test logowania 2')
+                }
             }
-        });
+        );
+        //        $.post('https://colorissimo.com/default/login/process', $(this).serializeArray(), {
+        //
+        //                //            referrer: '/',
+        //                login: $('#user').val(),
+        //                pass: $('#log-password').val(),
+        //                remember_me: 0
+        //
+        //            },
+        //            function (response) {
+        //                console.log('test logowania')
+        //                if (response.status == 1 && response.redirect != undefined) {
+        //                    window.location = response.redirect;
+        //                    console.log('test logowania 1')
+        //                } else {
+        //                    $btnSubmit.attr("disabled", false);
+        //                    $('#log-form .alert-danger').addClass("visible");
+        //                    console.log('test logowania 2')
+        //                }
+        //            });
 
         return false
 
@@ -154,8 +167,7 @@ $(function () {
     })
 
     $('#remind-form').submit(function (event) {
-console.log($("#remind-form").valid())
-        ;
+        console.log($("#remind-form").valid());
         if ($("#remind-form").valid()) {
 
             var $btnSubmit = $(this).find('button').first();
@@ -185,6 +197,3 @@ function successMessage(formId, htmlMessage) {
     $successMessage.html(htmlMessage);
     $successMessage.addClass("visible");
 }
-
-
-
