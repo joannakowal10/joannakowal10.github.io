@@ -15,17 +15,21 @@ $(function () {
         $btnSubmit.attr("disabled", true);
 
         $.post('https://colorissimo.com/default/login/process', $(this).serializeArray(), {
+
             //            referrer: '/',
             login: $('#user').val(),
             pass: $('#log-password').val(),
             remember_me: 0
-        }, function (response) {
-
+            
+        },  
+               function (response) {
             if (response.status == 1 && response.redirect != undefined) {
                 window.location = response.redirect;
+                
             } else {
                 $btnSubmit.attr("disabled", false);
                 $('#log-form .alert-danger').addClass("visible");
+                
             }
         });
 
@@ -182,49 +186,5 @@ function successMessage(formId, htmlMessage) {
     $successMessage.addClass("visible");
 }
 
-
-
-var tablica = ['Ania', 'Emil', 'Gosia'];
-console.log(tablica[2]+ ' i ' + tablica[1]);
-tablica.push('Asia');
-tablica.pop();
-tablica.unshift('Łukasz', 'Antoś');
-console.log(tablica);
-tablica.reverse();
-tablica.sort();
-console.log(tablica.join(' i '));
-
-class Ludzie {
-    constructor(imie, nazwisko){
-        this.imie = imie;
-        this.nazwisko = nazwisko;
-    }
-    wyswietlInfo() {
-        console.log("Imię: " + this.imie + " wiek: " + this.nazwisko);
-    }
-}
-
-var asia = new Ludzie('Joanna', '31');
-asia.wyswietlInfo();
-
-var iwona = new Ludzie ('Iwona', '876');
-iwona.wyswietlInfo();
-
-var krystian = new Ludzie ('Krystian', '15');
-krystian.wyswietlInfo();
-
-
-var x = 1;
-if (x == 1) {
-    console.log('Liczba równa się 1');
-};
-
-if (x == 3) {
-    console.log('Liczba równa się 3')
-}
-
-else {
-    console.log('Liczba równa się 1')
-};
 
 
